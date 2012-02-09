@@ -1,0 +1,203 @@
+HTML {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #ffffff; FONT-FAMILY: Arial, Sans-Serif; VERTICAL-ALIGN: middle
+}
+BODY {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #ffffff; FONT-FAMILY: Arial, Sans-Serif; VERTICAL-ALIGN: middle
+}
+.OuterContainingTable {
+	BORDER-BOTTOM: #366076 1px solid; BORDER-LEFT: #366076 1px solid; BACKGROUND-COLOR: #ffffff; WIDTH: 772px; BORDER-TOP: #366076 1px solid; BORDER-RIGHT: #366076 1px solid
+}
+.Menus {
+	
+}
+.MenuTable {
+	
+}
+.menuWrapper {
+	POSITION: absolute; DISPLAY: block; VISIBILITY: hidden
+}
+.menuItem {
+	POSITION: absolute; DISPLAY: block; CURSOR: default
+}
+.menuItemOn {
+	POSITION: absolute; DISPLAY: block; CURSOR: default
+}
+.menuImg {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; CURSOR: default
+}
+.ContentHeader {
+	
+}
+.ContentTitle {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0.5em; FONT-FAMILY: Verdana, Arial, Sans-Serif; FONT-SIZE: 16pt; FONT-WEIGHT: bold
+}
+.ContentBody {
+	FONT-FAMILY: Verdana, Arial, Sans-Serif; FONT-SIZE: 10pt
+}
+.ContentBody HR {
+	TEXT-ALIGN: left; WIDTH: 241px; COLOR: #c68e23
+}
+.ContentBody IMG {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.ContentFooter {
+	
+}
+.ContentFooter DIV {
+	PADDING-BOTTOM: 10px; FONT-STYLE: italic; FONT-SIZE: 10pt; PADDING-TOP: 5px
+}
+.ContentFooter HR {
+	TEXT-ALIGN: left; MARGIN-TOP: 25px; WIDTH: 482px; COLOR: #c68e23
+}
+.Footer {
+	
+}
+.Subscriptions {
+	FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, sans-serif; COLOR: #366076; FONT-SIZE: 10pt; FONT-WEIGHT: bold
+}
+.ArticleBody {
+	MARGIN-TOP: 5px
+}
+.ArticleAuthorDate {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0.5em; FONT-STYLE: italic; FONT-FAMILY: Arial, Sans-Serif; FONT-SIZE: 10pt; FONT-WEIGHT: bold; PADDING-TOP: 0.5em
+}
+.BlogTitle {
+	TEXT-ALIGN: left; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Sans-Serif; COLOR: #000000; FONT-SIZE: 12pt; FONT-WEIGHT: bold; PADDING-TOP: 1em
+}
+.BlogDate {
+	FONT-STYLE: italic; FONT-FAMILY: Arial, Sans-Serif; COLOR: #666666; FONT-SIZE: 10pt; FONT-WEIGHT: bold
+}
+.TopicHeader1 {
+	TEXT-ALIGN: left; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Sans-Serif; COLOR: #bf820e; FONT-SIZE: 14pt; FONT-WEIGHT: bold; PADDING-TOP: 1em
+}
+.TopicHeader2 {
+	TEXT-ALIGN: left; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Sans-Serif; COLOR: #bf820e; FONT-SIZE: 12pt; FONT-WEIGHT: bold; PADDING-TOP: 1em
+}
+.TopicHeader3 {
+	TEXT-ALIGN: left; FONT-STYLE: italic; FONT-FAMILY: Arial, Sans-Serif; FONT-SIZE: 10pt; FONT-WEIGHT: bold; PADDING-TOP: 0.5em
+}
+.APIParams {
+	TEXT-ALIGN: left; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Sans-Serif; FONT-SIZE: 10pt; FONT-WEIGHT: normal
+}
+.APIParams TH {
+	BACKGROUND-COLOR: #0000ff; COLOR: #ffffff
+}
+LI.foldingHeader {
+	TEXT-ALIGN: left; TEXT-INDENT: -1px; FONT-FAMILY: Verdana, Arial, Sans-Serif; COLOR: black; MARGIN-LEFT: -20px; FONT-SIZE: 16pt; CURSOR: pointer; FONT-WEIGHT: bold; LIST-STYLE-IMAGE: url(../images/plus.gif)
+}
+LI.headerEntry {
+	LIST-STYLE-TYPE: none; TEXT-INDENT: -1px; FONT-FAMILY: Verdana, Arial, Sans-Serif; MARGIN-LEFT: -20px; FONT-SIZE: 14pt; CURSOR: default; LIST-STYLE-IMAGE: none; PADDING-TOP: 3px
+}
+LI.foldingList {
+	TEXT-INDENT: -1px; FONT-FAMILY: Verdana, Arial, Sans-Serif; COLOR: black; MARGIN-LEFT: -20px; FONT-SIZE: 12pt; CURSOR: pointer; LIST-STYLE-IMAGE: url(../images/minus.gif); PADDING-TOP: 3px
+}
+LI.dot {
+	LIST-STYLE-TYPE: square; TEXT-INDENT: -1px; FONT-FAMILY: Arial, Sans-Serif; COLOR: #a1640c; MARGIN-LEFT: -20px; FONT-SIZE: 10pt; CURSOR: default; LIST-STYLE-IMAGE: none; PADDING-TOP: 3px
+}
+LI.nodot {
+	LIST-STYLE-TYPE: none; TEXT-INDENT: -1px; FONT-FAMILY: Arial, Sans-Serif; COLOR: blue; MARGIN-LEFT: -20px; FONT-SIZE: 10pt; CURSOR: default; LIST-STYLE-IMAGE: none; PADDING-TOP: 3px
+}
+.TableList {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BACKGROUND-COLOR: #ece9d8; WIDTH: 92%; BORDER-COLLAPSE: collapse; BORDER-TOP-STYLE: none; FONT-SIZE: 10pt; BORDER-LEFT-STYLE: none
+}
+.TableList TD {
+	BORDER-BOTTOM: #366076 5px solid; BORDER-LEFT: #366076 1px solid; PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BORDER-TOP: #366076 5px solid; BORDER-RIGHT: #366076 1px solid; PADDING-TOP: 8px
+}
+.RightBorder {
+	WIDTH: 33%; BORDER-RIGHT: #3d5f72 1px solid
+}
+.CodeSample {
+	FONT-FAMILY: Consolas, Courier New, Monospace; FONT-SIZE: 10pt
+}
+IMG {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+P.MainPoint {
+	FONT-WEIGHT: bold
+}
+.ArticleNavigation {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 10px; WIDTH: 100%; FONT-SIZE: 7pt
+}
+A.SpecialLink {
+	COLOR: #bf820e; TEXT-DECORATION: underline
+}
+A.ArchiveLink {
+	TEXT-DECORATION: none
+}
+.RSSBottom {
+	FILTER: progid:DXImageTransform.Microsoft.DropShadow(OffX=1, OffY=1, Color="black", Positive="true", Enabled="true"); PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #ff6600; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Tahoma, Arial; COLOR: #ffffff; FONT-SIZE: 6pt; CURSOR: pointer; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.SmallTable {
+	BORDER-BOTTOM: black thin solid; BORDER-LEFT: black thin solid; BACKGROUND-COLOR: #ece9d8; BORDER-TOP: black thin solid; BORDER-RIGHT: black thin solid
+}
+.SmallTable TD {
+	FONT-SIZE: 8pt
+}
+.SmallNumbersTable {
+	BORDER-BOTTOM: black thin solid; BORDER-LEFT: black thin solid; BACKGROUND-COLOR: #ece9d8; BORDER-TOP: black thin solid; BORDER-RIGHT: black thin solid
+}
+.SmallNumbersTable TH {
+	TEXT-ALIGN: center; FONT-SIZE: 8pt
+}
+.SmallNumbersTable TD {
+	TEXT-ALIGN: right; FONT-SIZE: 8pt
+}
+.PopBoxImageSmall {
+	BORDER-BOTTOM: white 0px; BORDER-LEFT: white 0px; BORDER-TOP: white 0px; CURSOR: url(http://www.c6software.com/images/magplus.cur), pointer; BORDER-RIGHT: white 0px
+}
+.PopBoxImageLarge {
+	BORDER-BOTTOM: #ccccff thin solid; BORDER-LEFT: #ccccff thin solid; BORDER-TOP: #ccccff thin solid; CURSOR: url(http://www.c6software.com/images/magminus.cur), pointer; BORDER-RIGHT: #ccccff thin solid
+}
+.PopBoxImageShrink {
+	CURSOR: url(http://www.c6software.com/images/magminus.cur), pointer
+}
+.PopBoxImageMove {
+	BORDER-BOTTOM: white 0px; BORDER-LEFT: white 0px; BORDER-TOP: white 0px; CURSOR: pointer; BORDER-RIGHT: white 0px
+}
+.PopBoxImageLink {
+	CURSOR: pointer
+}
+.FaqList {
+	FONT-FAMILY: Verdana, Arial, Sans-Serif
+}
+.FaqList LI {
+	MARGIN-BOTTOM: 3px; COLOR: blue; FONT-SIZE: 10pt; CURSOR: pointer
+}
+.FaqList P {
+	MARGIN-TOP: 20px; MARGIN-BOTTOM: 10px; COLOR: blue; FONT-SIZE: 10pt; FONT-WEIGHT: bold
+}
+.FaqList DIV {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; COLOR: black; MARGIN-LEFT: 20px; FONT-SIZE: 10pt
+}
+
+@media Print    
+{
+TABLE {
+	WIDTH: auto
+}
+TD {
+	WIDTH: auto
+}
+.Header {
+	DISPLAY: none
+}
+.Footer {
+	DISPLAY: inline
+}
+.Quote {
+	WIDTH: auto; DISPLAY: none
+}
+.ArticleTitle {
+	WIDTH: auto; DISPLAY: inline
+}
+.ArticleAuthorDate {
+	WIDTH: auto; DISPLAY: inline
+}
+.ArticleBody {
+	WIDTH: auto; DISPLAY: inline
+}
+.BlogDate {
+	WIDTH: auto; DISPLAY: inline
+}
+
+}

@@ -1,0 +1,2042 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0060)http://www.c6software.com/Products/PopBox/Documentation.aspx  and then modified to remove external urls -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>PopBox! - Javascript Image Magnification - Documentation</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK 
+id=_ctl0__ctl0_lnkStyleSheet rel=stylesheet type=text/css 
+href="PopBoxDocumentation_files/Styles.css"><LINK id=_ctl0__ctl0_lnkRSSFeed 
+title="RSS feed" rel=alternate type=application/rss+xml href="../../rss.xml">
+<SCRIPT language=javascript type=text/javascript><!--
+	// don't frame me!
+	if (top != self){top.location.href = location.href;}
+	//--></SCRIPT>
+
+<META name=Description 
+content="Documentation for PopBox. Shows a way to dynamically magnify your images to display greater detail.">
+<META name=Keywords 
+content="PopBox, Image, Magnification, Javascript, Documentation, Development, Programming">
+<META name=GENERATOR content="MSHTML 8.00.6001.18904"></HEAD>
+<BODY>
+<SCRIPT type=text/javascript>
+<!--
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="PopBoxDocumentation_files/WebResource.axd"></SCRIPT>
+
+<SCRIPT type=text/javascript src="PopBoxDocumentation_files/PopBox.js"></SCRIPT>
+ 
+<CENTER>
+<TABLE class=OuterContainingTable cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE border=0 cellSpacing=0 cellPadding=0 width=772>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width=772>
+              <TBODY>
+              <TR>
+                <TD style="WIDTH: 190px; HEIGHT: 104px"><A 
+                  id=_ctl0__ctl0_PlaceHolderPageHeader_linkLogo 
+                  href=""><IMG 
+                  style="BORDER-RIGHT-WIDTH: 0px; WIDTH: 190px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+                  id=_ctl0__ctl0_PlaceHolderPageHeader_imgLogo 
+                  src="PopBoxDocumentation_files/C6Logo.gif"></A></TD>
+                <TD 
+                style="BACKGROUND-COLOR: black; HEIGHT: 104px; VERTICAL-ALIGN: top">
+                  <TABLE style="TEXT-ALIGN: right; WIDTH: 582px; HEIGHT: 104px" 
+                  class=MenuTable border=0 cellSpacing=0 cellPadding=0>
+                    <TBODY>
+                    <TR align=right>
+                      <TD style="TEXT-ALIGN: right; HEIGHT: 35px"><IMG 
+                        style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+                        id=_ctl0__ctl0_PlaceHolderPageHeader_imgScience 
+                        align=right src="PopBoxDocumentation_files/Science.gif"> 
+                      </TD></TR>
+                    <TR>
+                      <TD 
+                      style="TEXT-ALIGN: right; HEIGHT: 69px; VERTICAL-ALIGN: bottom">
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width=582>
+                          <TBODY>
+                          <TR>
+                            <TD style="WIDTH: 84px; HEIGHT: 42px"><A 
+                              id=_ctl0__ctl0_PlaceHolderPageHeader_linkAbout 
+                              href=""><IMG 
+                              id=menuImg_1 class=menuImg alt=About 
+                              src="PopBoxDocumentation_files/AboutC6.gif"></A></TD>
+                            <TD style="WIDTH: 84px; HEIGHT: 42px"><A 
+                              id=_ctl0__ctl0_PlaceHolderPageHeader_linkArticles 
+                              href=""><IMG 
+                              id=menuImg_2 class=menuImg alt=Articles 
+                              src="PopBoxDocumentation_files/Articles.gif"></A></TD>
+                            <TD style="WIDTH: 84px; HEIGHT: 42px"><A 
+                              id=_ctl0__ctl0_PlaceHolderPageHeader_linkProducts 
+                              href=""><IMG 
+                              id=menuImg_3 class=menuImg alt=Products 
+                              src="PopBoxDocumentation_files/Products-sel.gif"></A></TD>
+                            <TD style="WIDTH: 120px; HEIGHT: 42px"><A 
+                              id=_ctl0__ctl0_PlaceHolderPageHeader_linkConsultation 
+                              href=""><IMG 
+                              id=menuImg_4 class=menuImg alt=Consultation 
+                              src="PopBoxDocumentation_files/Consultation.gif"></A></TD>
+                            <TD style="WIDTH: 115px; HEIGHT: 42px"><A 
+                              id=_ctl0__ctl0_PlaceHolderPageHeader_linkReading 
+                              href=""><IMG 
+                              id=menuImg_5 class=menuImg alt=Reading 
+                              src="PopBoxDocumentation_files/Reading.gif"></A></TD>
+                            <TD style="WIDTH: 95px; HEIGHT: 42px"><A 
+                              id=_ctl0__ctl0_PlaceHolderPageHeader_linkContact 
+                              href=""><IMG 
+                              id=menuImg_6 class=menuImg 
+                              alt="Contact C6 Software" 
+                              src="PopBoxDocumentation_files/Contact.gif"></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD>
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width=772>
+              <TBODY>
+              <TR>
+                <TD 
+                style="TEXT-ALIGN: left; BACKGROUND-COLOR: white; HEIGHT: 23px"><IMG 
+                  style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+                  id=_ctl0__ctl0_PlaceHolderPageHeader_imgCurveTop1 
+                  src="PopBoxDocumentation_files/CurveTop1.gif"></TD>
+                <TD style="TEXT-ALIGN: right; HEIGHT: 23px"><A 
+                  id=_ctl0__ctl0_PlaceHolderPageHeader_PlaceHolderUnderMenu_lnkRSSFeedTop 
+                  href=""><IMG 
+                  style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+                  id=_ctl0__ctl0_PlaceHolderPageHeader_PlaceHolderUnderMenu_imgRSSTop 
+                  src="PopBoxDocumentation_files/RSS.gif"></A> &nbsp;</TD></TR>
+              <TR>
+                <TD 
+                style="TEXT-ALIGN: left; BACKGROUND-COLOR: white; HEIGHT: 23px"><IMG 
+                  style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+                  id=_ctl0__ctl0_PlaceHolderPageHeader_imgCurveTop2 
+                  src="PopBoxDocumentation_files/CurveTop2.gif"></TD>
+                <TD 
+        style="HEIGHT: 23px">&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <TABLE id=tblMainContent border=0 cellSpacing=0 cellPadding=0 width=772>
+        <TBODY>
+        <TR>
+          <TD style="TEXT-ALIGN: left; WIDTH: 190px; VERTICAL-ALIGN: top"><IMG 
+            id=_ctl0__ctl0_imgCurveBottom border=0 
+            src="PopBoxDocumentation_files/CurveBottom.gif"><BR>
+            <TABLE 
+            style="TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px; WIDTH: 190px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+            cellSpacing=5 cellPadding=5>
+              <TBODY>
+              <TR>
+                <TD vAlign=top></TD></TR>
+              <TR>
+                <TD vAlign=top><IMG border=0 
+                  src="PopBoxDocumentation_files/magic.gif"> </TD></TR>
+              <TR>
+                <TD vAlign=top>
+                  <DIV 
+                  style="LINE-HEIGHT: 1.5em; MARGIN-TOP: 20px; MARGIN-BOTTOM: 50px; FONT-SIZE: 10pt"><A 
+                  href="">PopBox 
+                  Product Page</A> <BR><A 
+                  href="">Frequently 
+                  Asked Questions</A> <BR><A 
+                  href="">PopBox 
+                  Links</A> <BR><A 
+                  href="">Donate 
+                  to PopBox!</A> </DIV>
+                  <DIV 
+                  style="TEXT-ALIGN: left; MARGIN-TOP: 20px; MARGIN-BOTTOM: 50px; FONT-SIZE: 10pt">
+                  <P class=TopicHeader1>Index</P>
+                  <UL style="MARGIN-LEFT: 15px">
+                    <LI><A 
+                    href="#RevisionHistory">Revision 
+                    History</A></LI>
+                    <LI><A 
+                    href="#Prerequisites">Prerequisites</A></LI>
+                    <LI><A 
+                    href="#QuickStart">Quick 
+                    Start</A></LI>
+                    <LI><A 
+                    href="#pbSrc">pbSrc[NL] 
+                    Notes</A></LI>
+                    <LI><A 
+                    href="#PopBar">PopBar 
+                    Notes</A></LI>
+                    <LI><A 
+                    href="#Base">&lt;base&gt; 
+                    Html Tag</A></LI>
+                    <LI><A 
+                    href="#API">API 
+                    Reference</A> 
+                    <UL style="MARGIN-LEFT: 15px">
+                      <LI><A 
+                      href="#APIPop">Pop</A></LI>
+                      <LI><A
+                      href="#APIPopEx">PopEx</A></LI>
+                      <LI><A
+                      href="#APIPopBox">PopBox</A></LI>
+                      <LI><A
+                      href="#APIPopInPlace">PopInPlace</A></LI>
+                      <LI><A
+                      href="#APIRevert">Revert</A></LI>
+                      <LI><A
+                      href="#APIRevertAll">RevertAll</A></LI>
+                      <LI><A
+                      href="#APIPrePop">PrePopProcessing</A></LI>
+                      <LI><A
+                      href="#APIPostPop">PostPopProcessing</A></LI>
+                      <LI><A
+                      href="#APIPreRevert">PreRevertProcessing</A></LI>
+                      <LI><A
+                      href="#APIPostRevert">PostRevertProcessing</A></LI></UL></LI>
+                    <LI><A 
+                    href="#GlobalVariables">Global 
+                    Variables</A></LI>
+                    <LI><A 
+                    href="#CustomAttributes">Custom 
+                    Attributes</A></LI>
+                    <LI><A 
+                    href="#CSSClasses">CSS 
+                    Classes</A></LI>
+                    <LI><A 
+                    href="#ReservedWords">Reserved 
+                    Words</A></LI>
+                    <LI><A 
+                    href="#Support">Support</A></LI></UL></DIV>
+					</TD></TR></TBODY></TABLE></TD>
+          <TD style="TEXT-ALIGN: left; WIDTH: 582px; VERTICAL-ALIGN: top">
+            <TABLE 
+            style="TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px; WIDTH: 482px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+            cellSpacing=0 cellPadding=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=top>
+                  <DIV class=ContentMain>
+                  <DIV class=ContentHeader></DIV>
+                  <DIV class=ContentTitle>
+                  <TABLE border=0 cellPadding=10>
+                    <TBODY>
+                    <TR>
+                      <TD align=left><IMG style="WIDTH: 100px; HEIGHT: 49px" 
+                        id=imgPopBox 
+                        onmouseover=PopEx(this,-50,-25,200,98,20,null); 
+                        onmouseout=Revert(this,20,null); alt=PopBox! 
+                        src="PopBoxDocumentation_files/PopBox.gif" 
+                        pbshowrevertimage="false" pbshowreverttext="false" 
+                        pbshowrevertbar="false"> </TD>
+                      <TD style="PADDING-LEFT: 40px" align=left>Javascript 
+                        Image Magnification 2.7a 
+                  Documentation</TD></TR></TBODY></TABLE></DIV>
+                  <DIV id=divContentBody class=ContentBody>
+                  <P class=MainPoint>V2.7a - Sometimes More Is Better. </P>
+                  <P class=MainPoint>What is PopBox? </P>
+                  <P>PopBox is an image magnification javascript solution for 
+                  dynamically moving and resizing images on your web page. For a 
+                  good introduction and the latest version please see the <A 
+                  href="">PopBox 
+                  product page</A>. </P>
+                  <P>The documentation section links are located in the left 
+                  column. </P>
+                  <HR>
+
+                  <P class=TopicHeader1><A name=RevisionHistory></A><A 
+                  title="Click to see the full history." 
+                  onclick="ShowHide(); return false;" 
+                  href="">Revision 
+                  History</A>&nbsp;&nbsp;&nbsp;<SPAN 
+                  style="FONT-SIZE: 8pt; FONT-WEIGHT: normal">&lt;-- click to 
+                  see the full history</SPAN> </P>
+                  <SCRIPT type=text/javascript>
+	function ShowHide()
+	{
+		var obj = document.getElementById("idRevision");
+		if (obj != null)
+		{
+			if (obj.style.display == "none")
+				obj.style.display = "block";
+			else
+				obj.style.display = "none";
+		}
+	}
+	</SCRIPT>
+
+                  <UL style="MARGIN-BOTTOM: 0px">
+                    <LI>Version 2.7a - released July 3, 2009 
+                    <UL>
+                      <LI>Fixed a bug in the new IE8 that kept images from 
+                      popping more than once.</LI>
+                      <LI>Fixed a bug in FireFox where strange image pops would 
+                      occur if you clicked the popbar instead of the actual 
+                      image to pop it.</LI>
+                      <LI>Fixed an image positioning bug when using absolute 
+                      positioning.</LI></UL></LI></UL>
+                  <UL style="MARGIN-TOP: 0px; DISPLAY: none" id=idRevision>
+                    <LI>Version 2.6b - released September 24, 2008 
+                    <UL>
+                      <LI>Modified the PopInPlace method to always display the 
+                      popped image at its full size subject to window size. It 
+                      will still pop over the original image, but if it hits the 
+                      edge of the window it will move so it can fit instead of 
+                      stopping the animation.</LI></UL></LI>
+                    <LI>Version 2.6 - released September 12, 2008 
+                    <UL>
+                      <LI>Added the <A 
+                      href="#APIPopInPlace">PopInPlace</A> 
+                      method to more easily pop the image in place instead of to 
+                      the center of the screen.</LI>
+                      <LI>Added the popBoxExpandCaptionsBelow global variable 
+                      that will allow you to display the captions below the 
+                      image instead of over the image.</LI>
+                      <LI>Added the popBoxExpandCaptions global variable that 
+                      will allow you to display the captions already expanded 
+                      when the image is popped.</LI>
+                      <LI>Added the <A 
+                      href="#APIRevertAll">RevertAll</A> 
+                      method that will cause all popped images to revert to 
+                      their original size.</LI>
+                      <LI>Fixed a few functionality issues that occurred when 
+                      the page used the &lt;base /&gt; element in the 
+                      header.</LI>
+                      <LI>Fixed an image size bug where IE would cache the 
+                      original size of the image. This mostly affected 
+                      development but it was still a pain.</LI>
+                      <LI>Fixed a positioning bug in FF &amp; Safari when a 
+                      &lt;div&gt; parent element used the overflow style.</LI>
+                      <LI>Fixed a FF bug where the image would pop twice under 
+                      very rare conditions.</LI></UL></LI>
+                    <LI>Version 2.5 - released December 18, 2007 
+                    <UL>
+                      <LI>Added the capability to pop images in a landscape 
+                      format where the image is automatically scaled to the 
+                      height of the browser but will extend beyond the width if 
+                      necessary to support wide images (ditto for tall 
+                      images).<BR><SPAN style="FONT-WEIGHT: bold">For most 
+                      customers this is 100% backward compatible, but if you are 
+                      using the <A 
+                      href="#APIPopEx">PopEx</A> 
+                      method instead of the Pop method you should take a look at 
+                      the parameters as they now have extra functionality. See 
+                      the function definition for details.</SPAN></LI>
+                      <LI>Fixed a bug that occurred when the pnSrcNL property 
+                      was set to a relative path url. <SPAN 
+                      style="FONT-WEIGHT: bold">If you use the pbSrcNL instead 
+                      of pbSrc then you need to get this upgrade.</SPAN></LI>
+                      <LI>Added a work-around for a browser bug where the image 
+                      would sometimes not revert on roll-overs when the mouse 
+                      left the image. This fix requires a few more resources but 
+                      is only enabled for the page when you use the onmouseover 
+                      feature. There is a global variable, 
+                      popBoxMouseMoveRevert, that you can set to <SPAN 
+                      style="COLOR: #0000ff">false</SPAN> to use the old method 
+                      instead if you prefer.</LI>
+                      <LI>Fixed a bug where the size of the image is incorrectly 
+                      rendered during a revert if the command to revert the 
+                      image is initiated prior to the image popping completely. 
+                      This most often showed up on mouseover effects.</LI>
+                      <LI>Set the minimum value for the top left corner of the 
+                      popped image to 0,0 if the image is dynamically positioned 
+                      (you pass in <SPAN style="COLOR: #0000ff">null</SPAN> for 
+                      the left and top). Most browsers tested had difficulty 
+                      scrolling to the left and this will solve that 
+                      problem.</LI>
+                      <LI>The "more" and "less" textual links in the caption are 
+                      now contained in global variables to support other 
+                      languages. Now you can set popBoxCaptionMoreText and 
+                      popBoxCaptionLessText to "mehr" and "kleiner" or to 
+                      whatever you desire - just keep it short or the length 
+                      calculations will be off.</LI></UL></LI>
+                    <LI>Version 2.4 - released October 27, 2007 
+                    <UL>
+                      <LI>Added events that fire <SPAN 
+                      style="FONT-STYLE: italic">before</SPAN> the image is 
+                      Popped or Reverted. Now if you have UI elements on the 
+                      page (such as &lt;select&gt; drop-downs) that always 
+                      render on top you can hide them prior to the image Popping 
+                      and then make them visible again when the image 
+                      Reverts.</LI>
+                      <LI>Fixed a sizing bug that occurred when multiple 
+                      identical thumbnail images (with the same src value) each 
+                      Popped to different large images.</LI></UL></LI>
+                    <LI>Version 2.3 - released September 20, 2007 
+                    <UL>
+                      <LI>Fixed a bug where the PopBar would not display if the 
+                      images did not have unique ids.</LI>
+                      <LI>Created a new global function called CreateRandomId() 
+                      for this purpose.</LI></UL></LI>
+                    <LI>Version 2.2 - released July 20, 2007 
+                    <UL>
+                      <LI>Changed the cursor for the PopBar and RevertBar to 
+                      match the image cursor.</LI>
+                      <LI>Fixed a bug in Mozilla browsers where the image would 
+                      not display correctly if clicked prior to the page 
+                      completely loading.</LI>
+                      <LI>Fixed a bug where the wait image would not display if 
+                      the image was clicked prior to completely loading.</LI>
+                      <LI>Fixed a bug where the wait image would not disappear 
+                      if the image was clicked more than once before completely 
+                      loading.</LI></UL></LI>
+                    <LI>Version 2.1 - released July 16, 2007 
+                    <UL>
+                      <LI>Added a "pbCaption" attribute that is used to display 
+                      a caption for the image. (Defaults to the "title" 
+                      attribute if pbCaption doesn't exist.) If it's too large 
+                      to fit on one line it automatically renders with an 
+                      expanding capability. <BR><B>NOTE: If you are upgrading 
+                      from a previous version be aware that the default values 
+                      in 2.1 will render your <SPAN 
+                      style="COLOR: #ff0000">title</SPAN> attribute as a 
+                      caption.</B></LI>
+                      <LI>Added "popBoxCaptionBelow" and "popBoxShowCaption" 
+                      global variables to support the caption feature. Also 
+                      added a "pbShowCaption" attribute override.</LI>
+                      <LI>Added a "pbSrcNL" attribute to the <SPAN 
+                      style="COLOR: #0000ff">&lt;<SPAN 
+                      style="COLOR: #660000">img</SPAN>&gt;</SPAN> tag that 
+                      allows for a different image to be used for the Popped 
+                      image that is NOT preloaded.</LI>
+                      <LI>Fixed the stylesheet to display custom cursors in 
+                      FireFox also.</LI>
+                      <LI>Changed the cursor to the arrow image during 
+                      resizes.</LI>
+                      <LI>Fixed a bug where the PopBar wasn't moved with the 
+                      image when the page was resized. See <A 
+                      href="#PopBar">PopBar 
+                      Notes</A> for details.</LI>
+                      <LI>Fixed a minor bug where the popped image size was 20 
+                      pixels smaller than necessary if there was no 
+                      RevertBar.</LI></UL></LI>
+                    <LI>Version 2.0 - released June 28, 2007 
+                    <UL>
+                      <LI>Added a "pbSrc" attribute to the <SPAN 
+                      style="COLOR: #0000ff">&lt;<SPAN 
+                      style="COLOR: #660000">img</SPAN>&gt;</SPAN> tag that 
+                      allows for a different image to be used for the Popped 
+                      image.</LI>
+                      <LI>Added a popBoxAutoClose global variable that controls 
+                      automatic creation of calls to Revert.</LI>
+                      <LI>Added the PopBar transparency, text and image on page 
+                      load.</LI>
+                      <LI>Added global variables and custom attributes to 
+                      support the PopBar.</LI>
+                      <LI>Added global variables (popBoxRevertBarAbove &amp; 
+                      popBoxPopBarAbove) to control if the RevertBar and PopBar 
+                      display above the image or overlay the image.</LI>
+                      <LI>Fixed a bug where the "alt" attribute was not being 
+                      copied to the Popped image.</LI>
+                      <LI>Now auto-generates an Id for the original image if 
+                      omitted.</LI></UL></LI>
+                    <LI>Version 1.1 - released June 8, 2007 
+                    <UL>
+                      <LI>Added the RevertBar transparency, text and image.</LI>
+                      <LI>Added global variables and custom attributes to 
+                      support the RevertBar.</LI>
+                      <LI>Fixed a bug where the image would not Pop if the start 
+                      size was not defined in the style attribute of the image. 
+                      This only showed up when Popping an image was coded to 
+                      shrink it instead of enlarge it.</LI>
+                      <LI>Refactored source code to standardize on a naming 
+                      convention.</LI></UL></LI>
+                    <LI>Version 1.0 - released May 24, 2007</LI></UL>
+                  <HR>
+
+                  <P class=TopicHeader1><A name=Prerequisites></A>Prerequisites 
+                  </P>
+                  <P>PopBox requires you to have a basic understanding of HTML 
+                  coding and no more. You should be comfortable editing HTML 
+                  attributes and should have access to your web site sufficient 
+                  to add script files to your installation. </P>
+                  <P>PopBox requires the client to use a browser that supports 
+                  CSS positioning, which includes all modern browsers as of this 
+                  date. It also requires that the client browser has javascript 
+                  enabled. </P>
+                  <P>All samples are shown in the new 2.x format except where 
+                  noted. All later versions of PopBox 2.x are backward 
+                  compatible, but some behaviors might change. For example, 
+                  version 2.1 added the caption feature, which is turned on by 
+                  default, so if you didn't want captions you would need to 
+                  change the global variable to retain the look of versions 
+                  prior to 2.1. </P>
+                  <HR>
+
+                  <P class=TopicHeader1><A name=QuickStart></A>Quick Start</P>
+                  <P><IMG style="WIDTH: 150px; HEIGHT: 113px" id=imgBlueScoop1 
+                  class=PopBoxImageSmall title="Click to magnify/shrink" 
+                  onclick="Pop(this,50,'PopBoxImageLarge');" alt="" align=right 
+                  src="PopBoxDocumentation_files/BlueScoop.jpg" 
+                  pbcaption="I don't know where we got these beach toys, but they make for a nice contrasting photograph against the darker sand of Folsom Lake. It's not the greatest beach, but it's a beach, and that's a very nice change from a cube wall" 
+                  pbshowpopbar="true"> PopBox's default configuration will 
+                  probably be what most people will use as it was designed 
+                  specifically to fit the thumbnail expansion scheme that many 
+                  have on their web sites. I have used the same image for all 
+                  examples on this page to more easily show the feature 
+                  differences. You can click on any of the sample images on this 
+                  page to view the results. </P>
+                  <OL>
+                    <LI>Add the script include for the PopBox code. This 
+                    typically looks something like this: 
+                    <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                    style="COLOR: #0000ff">&lt;<SPAN 
+                    style="COLOR: #660000">script</SPAN> <SPAN 
+                    style="COLOR: #ff0000">src</SPAN>="/yoursite/scripts/PopBox.js" 
+                    <SPAN 
+                    style="COLOR: #ff0000">type</SPAN>="text/javascript"&gt;&lt;/<SPAN 
+                    style="COLOR: #660000">script</SPAN>&gt; </SPAN></P></LI>
+                    <LI>Make changes to the global variables to support your 
+                    installation directory structure (<SPAN 
+                    style="FONT-STYLE: italic">after</SPAN> the PopBox.js script 
+                    include): 
+                    <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                    style="COLOR: #0000ff">&lt;<SPAN 
+                    style="COLOR: #660000">script</SPAN> <SPAN 
+                    style="COLOR: #ff0000">type</SPAN>="text/javascript"&gt;</SPAN><BR>popBoxWaitImage.src 
+                    = <SPAN 
+                    style="COLOR: #660000">"/images/spinner40.gif"</SPAN>;<BR>popBoxRevertImage 
+                    = <SPAN 
+                    style="COLOR: #660000">"/images/magminus.gif"</SPAN>;<BR>popBoxPopImage 
+                    = <SPAN 
+                    style="COLOR: #660000">"/images/magplus.gif"</SPAN>;<BR><SPAN 
+                    style="COLOR: #0000ff">&lt;/<SPAN 
+                    style="COLOR: #660000">script</SPAN>&gt;</SPAN> </P></LI>
+                    <LI>Create stylesheet classes to define the look and feel of 
+                    the images before and after they are Popped (optional): 
+                    <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                    style="COLOR: #660000">.PopBoxImageSmall</SPAN><BR>{<BR>&nbsp;&nbsp;&nbsp;<SPAN 
+                    style="COLOR: #ff0000">border</SPAN>: <SPAN 
+                    style="COLOR: #0000ff">none 0px 
+                    white</SPAN>;<BR>&nbsp;&nbsp;&nbsp;<SPAN 
+                    style="COLOR: #ff0000">cursor</SPAN>: <SPAN 
+                    style="COLOR: #0000ff">url("http://yourpath/magplus.cur"), 
+                    pointer</SPAN>;<BR>}<BR><SPAN 
+                    style="COLOR: #660000">.PopBoxImageLarge</SPAN><BR>{<BR>&nbsp;&nbsp;&nbsp;<SPAN 
+                    style="COLOR: #ff0000">border</SPAN>: <SPAN 
+                    style="COLOR: #0000ff">solid thin 
+                    #CCCCFF</SPAN>;<BR>&nbsp;&nbsp;&nbsp;<SPAN 
+                    style="COLOR: #ff0000">cursor</SPAN>: <SPAN 
+                    style="COLOR: #0000ff">url("http://yourpath/magminus.cur"), 
+                    pointer</SPAN>;<BR>} </P></LI>
+                    <LI>Version 2.0 added a new simple way to define the call to 
+                    PopBox that allows you to use separate images for your 
+                    thumbnail and your popped image. PopBox 2.x is 100% backward 
+                    compatible and still supports the original way also. Version 
+                    2.x also allows you to omit the call to Revert because it 
+                    will be generated automatically for you. 
+                    <UL>
+                      <LI 
+                      style="BORDER-BOTTOM: #dddddd 1px solid; BORDER-LEFT: #dddddd 1px solid; BACKGROUND-COLOR: #eeeeee; MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; BORDER-TOP: #dddddd 1px solid; BORDER-RIGHT: #dddddd 1px solid"><SPAN 
+                      class=TopicHeader2>The Version 2.x Way:</SPAN> 
+                      <OL style="MARGIN-TOP: 10px">
+                        <LI>Get an image for the thumbnail and a second image 
+                        for the expanded image. All types supported by your 
+                        browser are supported by PopBox.</LI>
+                        <LI>Place the image on the page with a standard <SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN>&gt;</SPAN> tag.<BR>You 
+                        can omit the <SPAN style="COLOR: #ff0000">id</SPAN> 
+                        attribute and one will be generated for you, but good 
+                        coding practice is to define your own for each image 
+                        (just make sure they are unique). 
+                        <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN> <SPAN 
+                        style="COLOR: #ff0000">id</SPAN>="imgBlueScoop" <SPAN 
+                        style="COLOR: #ff0000">alt</SPAN>=""<BR><SPAN 
+                        style="COLOR: #ff0000">src</SPAN>="images/BlueScoopSmall.JPG" 
+                        /&gt;</SPAN> </P></LI>
+                        <LI>Add the "pbSrc" or the "pbSrcNL" attribute to the 
+                        <SPAN style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN>&gt;</SPAN> tag for the 
+                        Popped image (HTML attributes are not case-sensitive, 
+                        but it's standard to write them in lower case). The NL 
+                        in pbSrcNL stands for "No Load" and will not load the 
+                        image during the page onload event, but instead will 
+                        load it when the user clicks the image. 
+                        <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN> <SPAN 
+                        style="COLOR: #ff0000">id</SPAN>="imgBlueScoop" <SPAN 
+                        style="COLOR: #ff0000">alt</SPAN>=""<BR><SPAN 
+                        style="COLOR: #ff0000">src</SPAN>="images/BlueScoopSmall.JPG"<BR><SPAN 
+                        style="COLOR: #ff0000">pbsrc</SPAN>="images/BlueScoop.JPG" 
+                        /&gt;</SPAN> </P></LI>
+                        <LI>Add the "pbCaption" attribute if you want a caption 
+                        to display at the bottom of the popped image. (If 
+                        pbCaption is not defined but you have defined a "title" 
+                        then the "title" will be used as a caption. See the <A 
+                        href="#GlobalVariables">variables</A> 
+                        section of the documentation below for more 
+                        information.) 
+                        <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN> <SPAN 
+                        style="COLOR: #ff0000">id</SPAN>="imgBlueScoop" <SPAN 
+                        style="COLOR: #ff0000">alt</SPAN>=""<BR><SPAN 
+                        style="COLOR: #ff0000">src</SPAN>="images/BlueScoopSmall.JPG"<BR><SPAN 
+                        style="COLOR: #ff0000">pbsrc</SPAN>="images/BlueScoop.JPG"<BR><SPAN 
+                        style="COLOR: #ff0000">pbCaption</SPAN>="I don't know 
+                        where we got these beach toys, but they make for a nice 
+                        contrasting photograph against the darker sand of Folsom 
+                        Lake. It's not the greatest beach, but it's a beach, and 
+                        that's a very nice change from a cube wall" /&gt;</SPAN> 
+                        </P></LI>
+                        <LI>Optionally specify other attributes. 
+                        <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN> <SPAN 
+                        style="COLOR: #ff0000">id</SPAN>="imgBlueScoop" <SPAN 
+                        style="COLOR: #ff0000">alt</SPAN>=""<BR><SPAN 
+                        style="COLOR: #ff0000">src</SPAN>="images/BlueScoopSmall.JPG"<BR><SPAN 
+                        style="COLOR: #ff0000">pbsrc</SPAN>="images/BlueScoop.JPG"<BR><SPAN 
+                        style="COLOR: #ff0000">pbCaption</SPAN>="I don't know 
+                        where we got these beach toys, but they make for a nice 
+                        contrasting photograph against the darker sand of Folsom 
+                        Lake. It's not the greatest beach, but it's a beach, and 
+                        that's a very nice change from a cube wall"<BR><SPAN 
+                        style="COLOR: #ff0000">class</SPAN>="PopBoxImageSmall"<BR><SPAN 
+                        style="COLOR: #ff0000">title</SPAN>="Click to 
+                        magnify/shrink" /&gt;</SPAN> </P></LI>
+                        <LI>Add the PopBox call to the image events you 
+                        want.<BR>PopBox was designed to work in command pairs 
+                        where one command Pops the image and a second command 
+                        Reverts it back to it's thumbnail state. In version 2.x 
+                        if you use <SPAN style="COLOR: #0000ff">onclick</SPAN> 
+                        or <SPAN style="COLOR: #0000ff">onmouseover</SPAN> then 
+                        the call to Revert will be automatically generated for 
+                        you in the <SPAN style="COLOR: #0000ff">onclick</SPAN> 
+                        or <SPAN style="COLOR: #0000ff">onmouseout</SPAN> of the 
+                        expanded image. 
+                        <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN> <SPAN 
+                        style="COLOR: #ff0000">id</SPAN>="imgBlueScoop" <SPAN 
+                        style="COLOR: #ff0000">alt</SPAN>=""<BR><SPAN 
+                        style="COLOR: #ff0000">src</SPAN>="images/BlueScoopSmall.JPG"<BR><SPAN 
+                        style="COLOR: #ff0000">pbsrc</SPAN>="images/BlueScoop.JPG"<BR><SPAN 
+                        style="COLOR: #ff0000">pbCaption</SPAN>="I don't know 
+                        where we got these beach toys, but they make for a nice 
+                        contrasting photograph against the darker sand of Folsom 
+                        Lake. It's not the greatest beach, but it's a beach, and 
+                        that's a very nice change from a cube wall"<BR><SPAN 
+                        style="COLOR: #ff0000">class</SPAN>="PopBoxImageSmall"<BR><SPAN 
+                        style="COLOR: #ff0000">title</SPAN>="Click to 
+                        magnify/shrink"<BR><SPAN 
+                        style="COLOR: #ff0000">onclick</SPAN>="Pop(this,50,'PopBoxImageLarge');" 
+                        /&gt;</SPAN> </P><IMG id=imgSampleBlueScoop 
+                        class=PopBoxImageSmall title="Click to magnify/shrink" 
+                        onclick="Pop(this,50,'PopBoxImageLarge');" alt="" 
+                        src="PopBoxDocumentation_files/BlueScoopSmall.jpg" 
+                        pbcaption="I don't know where we got these beach toys, but they make for a nice contrasting photograph against the darker sand of Folsom Lake. It's not the greatest beach, but it's a beach, and that's a very nice change from a cube wall." 
+                        pbsrc="images/BlueScoop.jpg"> </LI></OL></LI>
+                      <LI 
+                      style="BORDER-BOTTOM: #aaaaaa 1px solid; BORDER-LEFT: #aaaaaa 1px solid; BACKGROUND-COLOR: #dddddd; MARGIN-TOP: 30px; MARGIN-BOTTOM: 10px; BORDER-TOP: #aaaaaa 1px solid; BORDER-RIGHT: #aaaaaa 1px solid"><SPAN 
+                      class=TopicHeader2>The original 1.x way is also still 
+                      supported.</SPAN> 
+                      <OL style="MARGIN-TOP: 10px">
+                        <LI>Get an image the full size you want when expanded. 
+                        All types supported by your browser are supported by 
+                        PopBox.</LI>
+                        <LI>Place the image on the page with a standard <SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN>&gt;</SPAN> tag.<BR>Be 
+                        sure to use a different "<SPAN 
+                        style="COLOR: #ff0000">id</SPAN>" attribute for each 
+                        image. 
+                        <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN> <SPAN 
+                        style="COLOR: #ff0000">id</SPAN>="imgBlueScoop" <SPAN 
+                        style="COLOR: #ff0000">alt</SPAN>=""<BR><SPAN 
+                        style="COLOR: #ff0000">src</SPAN>="images/BlueScoop.JPG" 
+                        /&gt;</SPAN> </P></LI>
+                        <LI>Use a style attribute to set the width and height to 
+                        represent the thumbnail or small image. 
+                        <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN> <SPAN 
+                        style="COLOR: #ff0000">id</SPAN>="imgBlueScoop" <SPAN 
+                        style="COLOR: #ff0000">alt</SPAN>=""<BR><SPAN 
+                        style="COLOR: #ff0000">src</SPAN>="images/BlueScoop.JPG"<BR><SPAN 
+                        style="COLOR: #ff0000">style</SPAN>="width: 150px; 
+                        height: 100px;" /&gt;</SPAN> </P></LI>
+                        <LI>Optionally specify other attributes. 
+                        <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN> <SPAN 
+                        style="COLOR: #ff0000">id</SPAN>="imgBlueScoop" <SPAN 
+                        style="COLOR: #ff0000">alt</SPAN>=""<BR><SPAN 
+                        style="COLOR: #ff0000">src</SPAN>="images/BlueScoop.JPG"<BR><SPAN 
+                        style="COLOR: #ff0000">style</SPAN>="width: 150px; 
+                        height: 100px;"<BR><SPAN 
+                        style="COLOR: #ff0000">class</SPAN>="PopBoxImageSmall"<BR><SPAN 
+                        style="COLOR: #ff0000">title</SPAN>="Click to 
+                        magnify/shrink" /&gt;</SPAN> </P></LI>
+                        <LI>Add the PopBox calls to the image events you 
+                        want.<BR>PopBox was designed to work in command pairs 
+                        where one command Pops the image and a second command 
+                        Reverts it back to it's thumbnail state. To easily 
+                        achieve this I recommend using <SPAN 
+                        style="COLOR: #0000ff">onclick</SPAN>/<SPAN 
+                        style="COLOR: #0000ff">ondblclick</SPAN> or <SPAN 
+                        style="COLOR: #0000ff">onmouseover</SPAN>/<SPAN 
+                        style="COLOR: #0000ff">onmouseout</SPAN>. 
+                        <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN> <SPAN 
+                        style="COLOR: #ff0000">id</SPAN>="imgBlueScoop" <SPAN 
+                        style="COLOR: #ff0000">alt</SPAN>=""<BR><SPAN 
+                        style="COLOR: #ff0000">src</SPAN>="images/BlueScoop.JPG"<BR><SPAN 
+                        style="COLOR: #ff0000">style</SPAN>="width: 150px; 
+                        height: 100px;"<BR><SPAN 
+                        style="COLOR: #ff0000">class</SPAN>="PopBoxImageSmall"<BR><SPAN 
+                        style="COLOR: #ff0000">title</SPAN>="Click to 
+                        magnify/shrink"<BR><SPAN 
+                        style="COLOR: #ff0000">onclick</SPAN>="Pop(this,50,'PopBoxImageLarge');"<BR><SPAN 
+                        style="COLOR: #ff0000">ondblclick</SPAN>="Revert(this,50,'PopBoxImageSmall');" 
+                        /&gt;</SPAN> </P></LI></OL></LI></UL></LI></OL>
+                  <TABLE border=0 cellSpacing=5 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TD>The <SPAN style="COLOR: #ff0000">onmouseover</SPAN> 
+                        and <SPAN style="COLOR: #ff0000">onmouseout</SPAN> pair 
+                        allow for an image to expand and shrink just by running 
+                        your mouse cursor over the image. (Or set the 
+                        popBoxAutoClose global to <SPAN 
+                        style="COLOR: #0000ff">true</SPAN> and you can omit the 
+                        call to <SPAN 
+                      style="COLOR: #ff0000">onmouseout</SPAN>.)</TD>
+                      <TD><IMG 
+                        style="WIDTH: 150px; FLOAT: right; HEIGHT: 113px" 
+                        id=imgBlueScoop2 onmouseover=Pop(this,50,null); alt="" 
+                        src="PopBoxDocumentation_files/BlueScoop.jpg" 
+                        pbshowrevertimage="false" 
+                        pbreverttext="Move your mouse off the image to shrink it back down."></TD></TR>
+                    <TR>
+                      <TD>The <SPAN style="COLOR: #ff0000">onclick</SPAN> and 
+                        <SPAN style="COLOR: #ff0000">ondblclick</SPAN> pair 
+                        allow for an image to expand and shrink by clicking on 
+                        the image. (Or set the popBoxAutoClose global to <SPAN 
+                        style="COLOR: #0000ff">true</SPAN> and you can omit the 
+                        call to ondblclick.)</TD>
+                      <TD><IMG 
+                        style="WIDTH: 150px; FLOAT: right; HEIGHT: 113px" 
+                        id=imgBlueScoop3 class=PopBoxImageSmall 
+                        title="Click to magnify/shrink" 
+                        onclick="Pop(this,50,'PopBoxImageLarge');" alt="" 
+                        src="PopBoxDocumentation_files/BlueScoop.jpg" 
+                        pbshowcaption="false"></TD></TR>
+                    <TR>
+                      <TD>While it wouldn't make any sense to combine <SPAN 
+                        style="COLOR: #ff0000">onclick</SPAN> and <SPAN 
+                        style="COLOR: #ff0000">onmouseover</SPAN> to Pop the 
+                        image, you can use both <SPAN 
+                        style="COLOR: #ff0000">ondblclick</SPAN> and <SPAN 
+                        style="COLOR: #ff0000">onmouseout</SPAN> to revert the 
+                        image. (If you set the popBoxAutoClose global to <SPAN 
+                        style="COLOR: #0000ff">true</SPAN> you can omit the call 
+                        to <SPAN style="COLOR: #ff0000">ondblclick</SPAN> if you 
+                        assign <SPAN style="COLOR: #ff0000">onclick</SPAN>, but 
+                        you will still need to call Revert from <SPAN 
+                        style="COLOR: #ff0000">onmouseout</SPAN>. The opposite 
+                        also applies. This is because the function calls work in 
+                        pairs.)</TD>
+                      <TD><IMG 
+                        style="WIDTH: 150px; FLOAT: right; HEIGHT: 113px" 
+                        id=imgBlueScoop4 class=PopBoxImageSmall 
+                        title="Click to magnify/shrink" 
+                        onmouseout="Revert(this,50,'PopBoxImageSmall');" 
+                        onclick="Pop(this,50,'PopBoxImageLarge');" alt="" 
+                        src="PopBoxDocumentation_files/BlueScoop.jpg" 
+                        pbreverttext="Click the image or move your mouse off the image to shrink it back down." 
+                        pbshowcaption="false"></TD></TR></TBODY></TABLE>
+                  <P>PopBox was designed specifically to allow rollover effects 
+                  with <SPAN style="COLOR: #ff0000">onmouseover</SPAN> and <SPAN 
+                  style="COLOR: #ff0000">onmouseout</SPAN>, or to allow Pop and 
+                  Revert by clicking on the image. However, since there is only 
+                  one <SPAN style="COLOR: #ff0000">onclick</SPAN> event I have 
+                  hijacked the <SPAN style="COLOR: #ff0000">ondblclick</SPAN> 
+                  event for the Revert as shown in the source code snippet 
+                  above. </P>
+                  <P>With version 2.0 came the popBoxAutoClose global variable 
+                  that will automatically generate the call to Revert when set 
+                  to <SPAN style="COLOR: #0000ff">true</SPAN>, which is its 
+                  default value. </P>
+                  <UL>
+                    <LI>If you assign <SPAN 
+                    style="COLOR: #ff0000">onclick</SPAN> to Pop the image then 
+                    Revert will automatically be called when the user clicks the 
+                    image again.</LI>
+                    <LI>If you assign <SPAN 
+                    style="COLOR: #ff0000">onmouseover</SPAN> to Pop the image 
+                    then Revert will automatically be called when the user's 
+                    mouse leaves the image.</LI></UL>
+                  <HR>
+
+                  <P class=TopicHeader1><A name=pbSrc></A>pbSrc Notes </P>
+                  <P>When you define the <SPAN 
+                  style="COLOR: #ff0000">pbSrc</SPAN> attribute on the image tag 
+                  it will use this image as the popped image, so you can truly 
+                  define a thumbnail in <SPAN style="COLOR: #ff0000">src</SPAN> 
+                  and an expanded image in <SPAN 
+                  style="COLOR: #ff0000">pbSrc</SPAN>. </P>
+                  <P>A function runs after the page loads that scans all the 
+                  images on the page looking for the <SPAN 
+                  style="COLOR: #ff0000">pbSrc</SPAN> attribute. If this 
+                  attribute exists the image will be preloaded and cached. If 
+                  the user pops the image before the image loading is complete a 
+                  wait image is displayed until the load is complete. The Url 
+                  for this wait image is stored in the popBoxWaitImage.src 
+                  global variable. </P>
+                  <P>Because the script is run at page load it is placed into 
+                  the window.onload event handler. It does play nice with other 
+                  scripts that add things to window.onload, so you should place 
+                  the script include for PopBox below all other script includes 
+                  that place functions on the window.onload event. </P>
+                  <P>Also remember that the <SPAN 
+                  style="COLOR: #0000ff">&lt;<SPAN 
+                  style="COLOR: #660000">body</SPAN>&gt;</SPAN> tag has an 
+                  onload event which is the same event as the window.onload. 
+                  DON'T USE IT! It will override all window.onload events. 
+                  Instead declare a script block above the PopBox include script 
+                  that adds your function to the window.onload event. </P>
+                  <P>If you do NOT want to preload the image you can place the 
+                  popped image url in the <SPAN 
+                  style="COLOR: #ff0000">pbSrcNL</SPAN> attribute and it will 
+                  load when the user clicks it. </P>
+                  <HR>
+
+                  <P class=TopicHeader1><A name=PopBar></A>PopBar Notes </P>
+                  <P>The PopBar is very similar to the RevertBar that appears 
+                  over the image after it is popped, except that the PopBar is 
+                  text you can place over your thumbnail prior to popping it. 
+                  You should keep it to one short line of text because the 
+                  height of the PopBar will only hold a single line. </P>
+                  <P>In order for a PopBar to appear on an image a function is 
+                  run after the page loads that scans all the images on the page 
+                  looking for the <SPAN 
+                  style="COLOR: #ff0000">pbShowPopBar</SPAN> attribute. If this 
+                  attribute exists, regardless of whether it is set to true or 
+                  false, the PopBar functionality is enabled for that image and 
+                  the PopBar global variables and image attributes will be 
+                  honored. </P>
+                  <P>Because the script is run at page load it is placed into 
+                  the window.onload event handler just like the check for pbSrc; 
+                  therefore the same rules for the pbSrc window.onload event 
+                  also apply to the PopBar. </P>
+                  <P>Another issue to keep in mind has to do with positioning 
+                  the PopBar on the image. Because your image is most likely 
+                  positioned "inline" and not "absolute" it is subject to move 
+                  as the page is resized or reformatted due to other dynamic 
+                  elements. This makes placement of the PopBar a little 
+                  tricky... I believe I have solved the problem, but in order to 
+                  do so I have made the decision NOT to support all values of 
+                  the <SPAN style="COLOR: #ff0000">align</SPAN> attribute on the 
+                  image. </P>
+                  <P>The <SPAN style="COLOR: #ff0000">align</SPAN> attribute 
+                  (which has actually been deprecated in favor of the "float" 
+                  Css style) positions the image so that text can flow around 
+                  it. Currently the "float" style is fully supported, but only 
+                  the "left" and "right" values of the <SPAN 
+                  style="COLOR: #ff0000">align</SPAN> attribute are supported. 
+                  If demand for support of the other values is high then I will 
+                  put the effort into resolution, though the different browsers 
+                  seem to render them all differently. </P>
+                  <HR>
+
+                  <P class=TopicHeader1><A name=Base></A>&lt;base&gt; Html Tag 
+                  Notes </P>
+                  <P>I have received a few support emails relating to the 
+                  &lt;base&gt; html tag wherein the urls for PopBox images are 
+                  not generating correctly. After doing some <A 
+                  href="http://mondaybynoon.com/2006/11/13/the-pros-and-cons-of-the-base-tag/">research</A> 
+                  on this tag it is evident to me that there are much better 
+                  ways to retrieve the root url of your site than by using this 
+                  tag. </P>
+                  <P>If your goal in using the &lt;base&gt; tag is to use 
+                  relative urls then just use relative urls without the 
+                  &lt;base&gt; tag. If you need the root url then perhaps you 
+                  would be better off using a forward slash at the beginning of 
+                  your url or setting it server-side in a variable. </P>
+                  <P>If these solutions are not to your liking you can still use 
+                  the &lt;base&gt; tag, but it may require additional testing 
+                  and judicious use of absolute urls for PopBox images. </P>
+                  <HR>
+
+                  <P class=TopicHeader1><A name=API></A>API Reference </P>
+                  <P>PopBox has a very simple API set with only 4 methods, 4 
+                  events and a host of configurable variables and attributes to 
+                  get the results you want. </P>
+                  <P>PopBox works not by expanding the image, but by actually 
+                  expanding a <I>copy</I> of the image. This allows PopBox to 
+                  utilize absolute positioning without affecting the page 
+                  layout. The original image is still there - it's just hidden 
+                  for the duration of the Popping and Reverting. Images that 
+                  start out as absolutely or relatively positioned will not be 
+                  copied because positioning them would not affect layout. </P>
+                  <HR>
+
+                  <P class=TopicHeader2><A name=APIPop></A>void Pop(obj, speed, 
+                  className) </P>
+                  <P class=TopicHeader3>Parameters </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>Parameter</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>obj</TD>
+                      <TD>The image object or a string representing the id of 
+                        the image object.</TD></TR>
+                    <TR>
+                      <TD>speed</TD>
+                      <TD>The speed at which the move and resize takes 
+                      place.</TD></TR>
+                    <TR>
+                      <TD>className</TD>
+                      <TD>The name of the CSS class that will be applied to 
+                        the image once the move and/or resize is 
+                    complete.</TD></TR></TBODY></TABLE>
+                  <P class=TopicHeader3>Return Value </P>
+                  <P>None. </P>
+                  <P class=TopicHeader3>Remarks </P>
+                  <P>The Pop method is a user friendly method to move and expand 
+                  the image. This method will automatically center the image in 
+                  the browser window as well as resize it to the full image 
+                  dimensions or window size, whichever is smaller. In other 
+                  words, if the size of the image is greater than the available 
+                  window the image will be scaled to fit. </P>
+                  <P>The speed parameter is measured roughly in pixels per 1/100 
+                  of a second. If the speed value is greater than the number of 
+                  pixels the image must move as well as greater than the 
+                  expanded height and width of the image then the move and 
+                  resize is immediate. There is no default, but images on this 
+                  page typically use a value of 50. </P>
+                  <HR>
+
+                  <P class=TopicHeader2><A name=APIPopEx></A>void PopEx(obj, 
+                  newLeft, newTop, newWidth,<BR><SPAN 
+                  style="PADDING-LEFT: 107px">newHeight, speed, 
+                  className)</SPAN> </P>
+                  <P class=TopicHeader3>Parameters </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>Parameter</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>obj</TD>
+                      <TD>The image object or a string representing the id of 
+                        the image object.</TD></TR>
+                    <TR>
+                      <TD>newLeft</TD>
+                      <TD>The position of the left side of the image in 
+                      pixels.</TD></TR>
+                    <TR>
+                      <TD>newTop</TD>
+                      <TD>The position of the top side of the image in 
+                      pixels.</TD></TR>
+                    <TR>
+                      <TD>newWidth</TD>
+                      <TD>The new width of the image in pixels.</TD></TR>
+                    <TR>
+                      <TD>newHeight</TD>
+                      <TD>The new height of the image in pixels.</TD></TR>
+                    <TR>
+                      <TD>speed</TD>
+                      <TD>The speed at which the move and resize takes 
+                      place.</TD></TR>
+                    <TR>
+                      <TD>className</TD>
+                      <TD>The name of the CSS class that will be applied to 
+                        the image once the move and/or resize is 
+                    complete.</TD></TR></TBODY></TABLE>
+                  <P class=TopicHeader3>Return Value </P>
+                  <P>None. </P>
+                  <P class=TopicHeader3>Remarks </P>
+                  <P>The PopEx method allows for greater control over image 
+                  movement and sizing. </P>
+                  <P>The newLeft and newTop parameters are treated by default as 
+                  positions relative to the image starting point and can be 
+                  either a negative or positive number. If either value is a 
+                  numeric string followed by an upper case "A" then it is 
+                  treated as an absolute position, relative to its containing 
+                  element (typically the browser window). Ex: "200A". If either 
+                  value is <SPAN style="COLOR: #0000ff">null</SPAN> the image 
+                  will be centered in the browser window. </P>
+                  <P>If the newWidth value is 0 the full width of the image will 
+                  be used up to a maximum of the browser window width. If the 
+                  newWidth value is <SPAN style="COLOR: #0000ff">null</SPAN> the 
+                  full size of the image will be used regardless of the browser 
+                  window width. Passing either 0 or <SPAN 
+                  style="COLOR: #0000ff">null</SPAN> will still scale the image 
+                  against the image height. An integer greater than 0 will not 
+                  be scaled. </P>
+                  <P>If the newHeight value is 0 the full height of the image 
+                  will be used up to a maximum of the browser window height. If 
+                  the newHeight value is <SPAN 
+                  style="COLOR: #0000ff">null</SPAN> the full size of the image 
+                  will be used regardless of the browser window height. Passing 
+                  either 0 or <SPAN style="COLOR: #0000ff">null</SPAN> will 
+                  still scale the image against the image width. An integer 
+                  greater than 0 will not be scaled. </P>
+                  <P>Nice landscape effects can thus be easily created by 
+                  setting the newWidth parameter to <SPAN 
+                  style="COLOR: #0000ff">null</SPAN> to allow the full width, 
+                  but setting the newHeight parameter to 0 to allow the height 
+                  of the browser window. </P>
+                  <P>If the browser cannot detect the full size of the image the 
+                  browser window size is used, subject to the image aspect 
+                  ratio. </P>
+                  <P>The speed parameter is measured roughly in pixels per 1/100 
+                  of a second. If the speed value is greater than the number of 
+                  pixels the image must move as well as greater than the 
+                  expanded height and width of the image then the move and 
+                  resize is immediate. There is no default, but images on this 
+                  page typically use a value of 50. </P>
+                  <P class=TopicHeader3>Example </P>
+                  <TABLE border=1 cellSpacing=0 cellPadding=7>
+                    <TBODY>
+                    <TR>
+                      <TD>Description</TD>
+                      <TD>Stretch an image.</TD></TR>
+                    <TR>
+                      <TD>Code</TD>
+                      <TD class=CodeSample>PopEx(this, -140, 0, 380, 113, 10, 
+                        <SPAN style="COLOR: #0000ff">null</SPAN>);</TD></TR>
+                    <TR>
+                      <TD>Sample</TD>
+                      <TD><IMG 
+                        style="WIDTH: 150px; FLOAT: right; HEIGHT: 113px" 
+                        id=imgBlueScoop5 title="Click to stretch" 
+                        onclick=PopEx(this,-140,0,380,113,10,null); alt="" 
+                        src="PopBoxDocumentation_files/BlueScoop.jpg" 
+                        pbshowrevertimage="false" pbshowpopbar="true" 
+                        pbreverttext="Click the image to unstretch it." 
+                        pbshowcaption="false" 
+                    pbpoptext="Click to stretch."></TD></TR>
+                    <TR>
+                      <TD colSpan=2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD>Description</TD>
+                      <TD>Pop an image to the center of the screen at its 
+                        default size and position. Also specify a CSS class that 
+                        places a border around the image and specifies a mouse 
+                        cursor for browsers that support it.</TD></TR>
+                    <TR>
+                      <TD>Code</TD>
+                      <TD class=CodeSample>PopEx(this, <SPAN 
+                        style="COLOR: #0000ff">null</SPAN>, <SPAN 
+                        style="COLOR: #0000ff">null</SPAN>, 0, 0, 50, 
+                        'PopBoxImageLarge');</TD></TR>
+                    <TR>
+                      <TD>Sample</TD>
+                      <TD><IMG 
+                        style="WIDTH: 150px; FLOAT: right; HEIGHT: 113px" 
+                        id=imgBlueScoop6 class=PopBoxImageSmall 
+                        title="Click to expand/shrink" 
+                        onclick="PopEx(this,null, null, 0, 0,50,'PopBoxImageLarge');" 
+                        alt="" src="PopBoxDocumentation_files/BlueScoop.jpg" 
+                        pbshowcaption="false"></TD></TR>
+                    <TR>
+                      <TD colSpan=2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD>Description</TD>
+                      <TD>Pop a landscape image to the center of the screen 
+                        and allow it to extend to the right beyond the window, 
+                        but constrain it to the height of the window.</TD></TR>
+                    <TR>
+                      <TD>Code</TD>
+                      <TD class=CodeSample>PopEx(this,<SPAN 
+                        style="COLOR: #0000ff">null</SPAN>,<SPAN 
+                        style="COLOR: #0000ff">null</SPAN>,<SPAN 
+                        style="COLOR: #0000ff">null</SPAN>,0,50,'PopBoxImageLarge');</TD></TR>
+                    <TR>
+                      <TD>Sample</TD>
+                      <TD><IMG id=imgGrad class=PopBoxImageSmall 
+                        title="Click to resize" 
+                        onclick="PopEx(this,null,null,null,0,50,'PopBoxImageLarge');" 
+                        alt="" 
+                        src="PopBoxDocumentation_files/graduationsmall.jpg" 
+                        pbshowpopbar="true" pbsrc="images/graduationbig.JPG"> 
+                    </TD></TR></TBODY></TABLE>
+                  <HR>
+
+                  <P class=TopicHeader2><A name=APIPopBox></A>void PopBox(elem, 
+                  startX, startY, endX, endY,<BR><SPAN 
+                  style="PADDING-LEFT: 107px">startW, startH, endW, 
+                  endH,</SPAN><BR><SPAN style="PADDING-LEFT: 107px">speedM, 
+                  speedS, className, fnDone)</SPAN> </P>
+                  <P class=TopicHeader3>Parameters </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>Parameter</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>elem</TD>
+                      <TD>The image object or a string representing the id of 
+                        the image object.</TD></TR>
+                    <TR>
+                      <TD>startX</TD>
+                      <TD>The starting position of the left side of the image 
+                        in pixels.</TD></TR>
+                    <TR>
+                      <TD>startY</TD>
+                      <TD>The starting position of the top side of the image 
+                        in pixels.</TD></TR>
+                    <TR>
+                      <TD>endX</TD>
+                      <TD>The ending position of the left side of the image in 
+                        pixels.</TD></TR>
+                    <TR>
+                      <TD>endY</TD>
+                      <TD>The ending position of the top side of the image in 
+                        pixels.</TD></TR>
+                    <TR>
+                      <TD>startW</TD>
+                      <TD>The starting width of the image in pixels.</TD></TR>
+                    <TR>
+                      <TD>startH</TD>
+                      <TD>The starting height of the image in pixels.</TD></TR>
+                    <TR>
+                      <TD>endW</TD>
+                      <TD>The ending width of the image in pixels.</TD></TR>
+                    <TR>
+                      <TD>endH</TD>
+                      <TD>The ending height of the image in pixels.</TD></TR>
+                    <TR>
+                      <TD>speedM</TD>
+                      <TD>The speed at which the move takes place.</TD></TR>
+                    <TR>
+                      <TD>speedS</TD>
+                      <TD>The speed at which the resize takes place.</TD></TR>
+                    <TR>
+                      <TD>className</TD>
+                      <TD>The name of the CSS class that will be applied to 
+                        the image once the move and/or resize is complete.</TD></TR>
+                    <TR>
+                      <TD>fnDone</TD>
+                      <TD>A function to call when the move/resize is complete. 
+                        (Do not place this in quotes. It is a 
+                    pointer.)</TD></TR></TBODY></TABLE>
+                  <P class=TopicHeader3>Return Value </P>
+                  <P>None. </P>
+                  <P class=TopicHeader3>Remarks </P>
+                  <P>The PopBox method allows for the greatest amount of control 
+                  over image movement and sizing and should only be used if you 
+                  really understand CSS positioning. It is highly recommended 
+                  that you use the Pop or PopEx functions instead. </P>
+                  <P>The startX, startY, endX and endY parameters are treated as 
+                  absolute positions relative to the image's containing element 
+                  (typically the browser window). </P>
+                  <P>The speed parameters are measured roughly in pixels per 
+                  1/100 of a second. </P>
+                  <P class=TopicHeader3>Example </P>
+                  <SCRIPT type=text/javascript>
+	function FullExample(elem)
+	{
+		if (typeof elem == "string") elem = GetRawObject(elem);
+		var elem = InitPopBox(elem);
+		var startPos = GetElementPosition(elem);
+
+		if (typeof elem.ondblclick == "function")
+			elem.onclick = elem.ondblclick;
+
+		PopBox(elem, startPos.x, startPos.y, startPos.x - 400, startPos.y - 200, 150, 113, 600, 450, 12, 5, 'PopBoxImageLarge', null);
+	}
+	</SCRIPT>
+
+                  <TABLE border=1 cellSpacing=0 cellPadding=7>
+                    <TBODY>
+                    <TR>
+                      <TD>Description</TD>
+                      <TD>Pop an image with move slightly faster than 
+                      resize.</TD></TR>
+                    <TR>
+                      <TD>Code</TD>
+                      <TD class=CodeSample>var startPos = 
+                        GetElementPosition(elem);<BR>PopBox(elem, startPos.x, 
+                        startPos.y, startPos.x - 400, startPos.y - 200, 150, 
+                        113, 600, 450, 12, 5, 'PopBoxImageLarge', null);</TD></TR>
+                    <TR>
+                      <TD>Sample</TD>
+                      <TD><IMG 
+                        style="WIDTH: 150px; FLOAT: right; HEIGHT: 113px" 
+                        id=imgBlueScoop7 class=PopBoxImageSmall 
+                        title="Click to expand/shrink" 
+                        ondblclick="Revert(this,10,'PopBoxImageSmall');" 
+                        onclick=FullExample(this); alt="" 
+                        src="PopBoxDocumentation_files/BlueScoop.jpg" 
+                        pbshowcaption="false"></TD></TR></TBODY></TABLE>
+                  <HR>
+
+                  <P class=TopicHeader2><A name=APIPopInPlace></A>void 
+                  PopInPlace(obj, speed, className) </P>
+                  <P class=TopicHeader3>Parameters </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>Parameter</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>obj</TD>
+                      <TD>The image object or a string representing the id of 
+                        the image object.</TD></TR>
+                    <TR>
+                      <TD>speed</TD>
+                      <TD>The speed at which the move and resize takes 
+                      place.</TD></TR>
+                    <TR>
+                      <TD>className</TD>
+                      <TD>The name of the CSS class that will be applied to 
+                        the image once the move and/or resize is 
+                    complete.</TD></TR></TBODY></TABLE>
+                  <P class=TopicHeader3>Return Value </P>
+                  <P>None. </P>
+                  <P class=TopicHeader3>Remarks </P>
+                  <P>The PopInPlace method is a user friendly method to move and 
+                  expand the image. This method will automatically resize the 
+                  image over the original image to the full image dimensions or 
+                  window size, whichever is smaller. If one or two edges of the 
+                  window would keep the image from expanding it will be moved 
+                  off the original image center to allow it to expand until it 
+                  is full size or hits another window edge. </P>
+                  <P>The speed parameter is measured roughly in pixels per 1/100 
+                  of a second. If the speed value is greater than the number of 
+                  pixels the image must move as well as greater than the 
+                  expanded height and width of the image then the move and 
+                  resize is immediate. There is no default, but images on this 
+                  page typically use a value of 50. </P>
+                  <HR>
+
+                  <P class=TopicHeader2><A name=APIRevert></A>void Revert(obj, 
+                  speed, className) </P>
+                  <P class=TopicHeader3>Parameters </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>Parameter</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>obj</TD>
+                      <TD>The image object or a string representing the id of 
+                        the image object.</TD></TR>
+                    <TR>
+                      <TD>speed</TD>
+                      <TD>The speed at which the move and resize takes 
+                      place.</TD></TR>
+                    <TR>
+                      <TD>className</TD>
+                      <TD>The name of the CSS class that will be applied to 
+                        the image once the move and/or resize is 
+                    complete.</TD></TR></TBODY></TABLE>
+                  <P class=TopicHeader3>Return Value </P>
+                  <P>None. </P>
+                  <P class=TopicHeader3>Remarks </P>
+                  <P>The Revert method is the companion opposite of the Pop or 
+                  PopEx method. Like the Pop and PopEx methods it uses the 
+                  PopBox method, but instead reverts the popped image back to 
+                  it's original state. </P>
+                  <P>The speed parameter is measured roughly in pixels per 1/100 
+                  of a second. If the speed value is greater than the number of 
+                  pixels the image must move as well as greater than the 
+                  expanded height and width of the image then the move and 
+                  resize is immediate. There is no default, but images on this 
+                  page typically use a value of 50. </P>
+                  <HR>
+
+                  <P class=TopicHeader2><A name=APIRevertAll></A>void 
+                  RevertAll(speed, className) </P>
+                  <P class=TopicHeader3>Parameters </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>Parameter</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>speed</TD>
+                      <TD>The speed at which the move and resize takes 
+                      place.</TD></TR>
+                    <TR>
+                      <TD>className</TD>
+                      <TD>The name of the CSS class that will be applied to 
+                        the image once the move and/or resize is 
+                    complete.</TD></TR></TBODY></TABLE>
+                  <P class=TopicHeader3>Return Value </P>
+                  <P>None. </P>
+                  <P class=TopicHeader3>Remarks </P>
+                  <P>The RevertAll method essentially calls the Revert method 
+                  for all Popped images. </P>
+                  <P>The speed parameter is measured roughly in pixels per 1/100 
+                  of a second. If the speed value is greater than the number of 
+                  pixels the image must move as well as greater than the 
+                  expanded height and width of the image then the move and 
+                  resize is immediate. There is no default, but images on this 
+                  page typically use a value of 50. </P>
+                  <HR>
+
+                  <P class=TopicHeader2><A name=APIPrePop></A>void 
+                  PrePopProcessing(obj) </P>
+                  <P class=TopicHeader3>Parameters </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>Parameter</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>obj</TD>
+                      <TD>The image object or a string representing the id of 
+                        the original image object.</TD></TR></TBODY></TABLE>
+                  <P class=TopicHeader3>Return Value </P>
+                  <P>None. </P>
+                  <P class=TopicHeader3>Remarks </P>
+                  <P>This function (if it exists) is automatically called from 
+                  within Pop/PopEx before the move and/or resize begins. To take 
+                  advantage of this function you only need to implement it in 
+                  your code. </P>
+                  <HR>
+
+                  <P class=TopicHeader2><A name=APIPostPop></A>void 
+                  PostPopProcessing(obj) </P>
+                  <P class=TopicHeader3>Parameters </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>Parameter</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>obj</TD>
+                      <TD>The image object or a string representing the id of 
+                        the copy of the image object.</TD></TR></TBODY></TABLE>
+                  <P class=TopicHeader3>Return Value </P>
+                  <P>None. </P>
+                  <P class=TopicHeader3>Remarks </P>
+                  <P>This function (if it exists) is automatically called from 
+                  within Pop/PopEx once the move and/or resize is complete. To 
+                  take advantage of this function you only need to implement it 
+                  in your code. </P>
+                  <P>If you wish to do processing based on the specific image 
+                  that has been Popped you must remember that PopBox is actually 
+                  popping a copy of the original image with a different id 
+                  attribute than the original. The copy id is generated using 
+                  the following formula: </P>
+                  <P class=CodeSample>newId = "popcopy" + originalId; </P>
+                  <HR>
+
+                  <P class=TopicHeader2><A name=APIPreRevert></A>void 
+                  PreRevertProcessing(obj) </P>
+                  <P class=TopicHeader3>Parameters </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>Parameter</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>obj</TD>
+                      <TD>The image object or a string representing the id of 
+                        the copy of the image object.</TD></TR></TBODY></TABLE>
+                  <P class=TopicHeader3>Return Value </P>
+                  <P>None. </P>
+                  <P class=TopicHeader3>Remarks </P>
+                  <P>This function (if it exists) is automatically called from 
+                  within Revert before the move and/or resize is complete. To 
+                  take advantage of this function you only need to implement it 
+                  in your code. </P>
+                  <P>If you wish to do processing based on the specific image 
+                  that has been Popped you must remember that PopBox is actually 
+                  popping a copy of the original image with a different id 
+                  attribute than the original. The copy id is generated using 
+                  the following formula: </P>
+                  <P class=CodeSample>newId = "popcopy" + originalId; </P>
+                  <HR>
+
+                  <P class=TopicHeader2><A name=APIPostRevert></A>void 
+                  PostRevertProcessing(obj) </P>
+                  <P class=TopicHeader3>Parameters </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>Parameter</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>obj</TD>
+                      <TD>The image object or a string representing the id of 
+                        the original image object.</TD></TR></TBODY></TABLE>
+                  <P class=TopicHeader3>Return Value </P>
+                  <P>None. </P>
+                  <P class=TopicHeader3>Remarks </P>
+                  <P>This function (if it exists) is automatically called from 
+                  within Revert once the move and/or resize is complete. To take 
+                  advantage of this function you only need to implement it in 
+                  your code. </P>
+                  <HR>
+
+                  <P class=TopicHeader1><A name=GlobalVariables></A>Global 
+                  Variables </P>
+                  <P>PopBox uses a number of global variables for configuration 
+                  that you can modify to change the way PopBox looks and 
+                  behaves. </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>Global Variable</TH>
+                      <TH>Data Type</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>popBoxAutoClose</TD>
+                      <TD>boolean</TD>
+                      <TD>If set to <SPAN style="COLOR: #0000ff">true</SPAN> 
+                        then calls to Revert will be generated automatically 
+                        when you call Pop/PopEx/PopBox. This allows you to avoid 
+                        having to write the calls to Revert for all images since 
+                        they are typically very similar.<BR><BR>If <SPAN 
+                        style="COLOR: #ff0000">onmouseover</SPAN> contains a 
+                        function then Revert is placed in the <SPAN 
+                        style="COLOR: #ff0000">onmouseout</SPAN> event of the 
+                        Popped image. If <SPAN 
+                        style="COLOR: #ff0000">onclick</SPAN> contains a 
+                        function then Revert is placed in the <SPAN 
+                        style="COLOR: #ff0000">onclick</SPAN> of the Popped 
+                        image, but only if the <SPAN 
+                        style="COLOR: #ff0000">onmouseover</SPAN> does not 
+                        contain a function. The default value is <SPAN 
+                        style="COLOR: #0000ff">true</SPAN>. </TD></TR>
+                    <TR>
+                      <TD>popBoxCaptionBelow</TD>
+                      <TD>boolean</TD>
+                      <TD>When set to <SPAN style="COLOR: #0000ff">true</SPAN> 
+                        the caption will display below the image instead of 
+                        overlaying transparently on top of it. The default value 
+                        is <SPAN style="COLOR: #0000ff">false</SPAN>. </TD></TR>
+                    <TR>
+                      <TD>popBoxCaptionLessText</TD>
+                      <TD>string</TD>
+                      <TD>This variable holds the text that displays in the 
+                        hyperlink at the end of the caption when the caption 
+                        text is too long to fit on a single line and the full 
+                        caption is currently being displayed. The default value 
+                        is "less" but can now be altered easily to support other 
+                        languages.</TD></TR>
+                    <TR>
+                      <TD>popBoxCaptionMoreText</TD>
+                      <TD>string</TD>
+                      <TD>This variable holds the text that displays in the 
+                        hyperlink at the end of the caption when the caption 
+                        text is too long to fit on a single line and only the 
+                        first line is currently being displayed. The default 
+                        value is "more" but can now be altered easily to support 
+                        other languages.</TD></TR>
+                    <TR>
+                      <TD>popBoxExpandCaptions</TD>
+                      <TD>boolean</TD>
+                      <TD>When set to true all captions will expand 
+                        automatically upon image pop. The default value is <SPAN 
+                        style="COLOR: #0000ff">false</SPAN>.</TD></TR>
+                    <TR>
+                      <TD>popBoxExpandCaptionsBelow</TD>
+                      <TD>boolean</TD>
+                      <TD>When set to true all captions will expand below the 
+                        image instead of upward on top of the image. The default 
+                        value is <SPAN 
+style="COLOR: #0000ff">false</SPAN>.</TD></TR>
+                    <TR>
+                      <TD>popBoxMouseMoveRevert</TD>
+                      <TD>boolean</TD>
+                      <TD>When set to true any image that is popped using the 
+                        <SPAN style="COLOR: #ff0000">onmouseover</SPAN> event 
+                        will use a document level <SPAN 
+                        style="COLOR: #ff0000">onmousemove</SPAN> event to 
+                        detect when the mouse is no longer on the image to call 
+                        the revert. When set to <SPAN 
+                        style="COLOR: #0000ff">false</SPAN> the <SPAN 
+                        style="COLOR: #ff0000">onmouseout</SPAN> event on the 
+                        image is used instead.<BR><BR>The document level event 
+                        is far more accurate but it takes up extra resources 
+                        when the page uses <SPAN 
+                        style="COLOR: #ff0000">onmouseover</SPAN> events. (No 
+                        extra resources are used if the page does not.) The 
+                        <SPAN style="COLOR: #ff0000">onmouseout</SPAN> event is 
+                        sometimes missed by the browser. The default value is 
+                        <SPAN style="COLOR: #0000ff">true</SPAN>.</TD></TR>
+                    <TR>
+                      <TD>popBoxPopBarAbove</TD>
+                      <TD>boolean</TD>
+                      <TD>When set to <SPAN style="COLOR: #0000ff">true</SPAN> 
+                        the PopBar will display above the image instead of 
+                        overlaying transparently on top of it. The default value 
+                        is <SPAN style="COLOR: #0000ff">false</SPAN>.<BR><BR>The 
+                        <SPAN style="COLOR: #ff0000">pbShowPopBar</SPAN> 
+                        attribute must be set on the <SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN>&gt;</SPAN> tag. </TD></TR>
+                    <TR>
+                      <TD>popBoxPopImage</TD>
+                      <TD>string</TD>
+                      <TD>This is the url to the image that should be 
+                        displayed at the top right of the thumbnail image when 
+                        the page loads. It can be overridden by the pbPopImage 
+                        custom attribute (see below).<BR><BR>The <SPAN 
+                        style="COLOR: #ff0000">pbShowPopBar</SPAN> attribute 
+                        must be set on the <SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN>&gt;</SPAN> 
+                        tag.<BR><BR>This image should be 20 x 20 pixels in width 
+                        and height.</TD></TR>
+                    <TR>
+                      <TD>popBoxPopText</TD>
+                      <TD>string</TD>
+                      <TD>This is the text message that should be displayed 
+                        across the top of the thumbnail image when the page 
+                        loads. It can be overridden by the pbPopText custom 
+                        attribute (see below).<BR><BR>The <SPAN 
+                        style="COLOR: #ff0000">pbShowPopBar</SPAN> attribute 
+                        must be set on the <SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN>&gt;</SPAN> tag.</TD></TR>
+                    <TR>
+                      <TD>popBoxRevertBarAbove</TD>
+                      <TD>boolean</TD>
+                      <TD>When set to <SPAN style="COLOR: #0000ff">true</SPAN> 
+                        the RevertBar will display above the image instead of 
+                        overlaying transparently on top of it. The default value 
+                        is <SPAN style="COLOR: #0000ff">false</SPAN>. </TD></TR>
+                    <TR>
+                      <TD>popBoxRevertImage</TD>
+                      <TD>string</TD>
+                      <TD>This is the url to the image that should be 
+                        displayed at the top right of the image after it has 
+                        been popped. It can be overridden by the pbRevertImage 
+                        custom attribute (see below).<BR><BR>This image should 
+                        be 20 x 20 pixels in width and height.</TD></TR>
+                    <TR>
+                      <TD>popBoxRevertText</TD>
+                      <TD>string</TD>
+                      <TD>This is the text message that should be displayed 
+                        across the top of the image after it has been popped. It 
+                        can be overridden by the pbRevertText custom attribute 
+                        (see below).</TD></TR>
+                    <TR>
+                      <TD>popBoxShowCaption</TD>
+                      <TD>boolean</TD>
+                      <TD>This represents the default value of whether the 
+                        caption should be displayed across the bottom of the 
+                        image after it has been popped. It can be overridden by 
+                        the pbShowCaption custom attribute (see below). The 
+                        default value is <SPAN 
+                        style="COLOR: #0000ff">true</SPAN>.</TD></TR>
+                    <TR>
+                      <TD>popBoxShowPopImage</TD>
+                      <TD>boolean</TD>
+                      <TD>This represents the default value of whether the 
+                        image icon should be displayed at the top right of the 
+                        thumbnail image when the page loads. It can be 
+                        overridden by the pbShowPopImage custom attribute (see 
+                        below).<BR><BR>The <SPAN 
+                        style="COLOR: #ff0000">pbShowPopBar</SPAN> attribute 
+                        must be set on the <SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN>&gt;</SPAN> tag.</TD></TR>
+                    <TR>
+                      <TD>popBoxShowPopText</TD>
+                      <TD>boolean</TD>
+                      <TD>This represents the default value of whether the 
+                        text message should be displayed across the top of the 
+                        thumbnail image when the page loads. It can be 
+                        overridden by the pbShowPopText custom attribute (see 
+                        below).<BR><BR>The <SPAN 
+                        style="COLOR: #ff0000">pbShowPopBar</SPAN> attribute 
+                        must be set on the <SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN>&gt;</SPAN> tag.</TD></TR>
+                    <TR>
+                      <TD>popBoxShowRevertBar</TD>
+                      <TD>boolean</TD>
+                      <TD>This represents the default value of whether the 
+                        transparent RevertBar should be displayed across the top 
+                        of the image after it has been popped. It can be 
+                        overridden by the pbShowRevertBar custom attribute (see 
+                        below). The default value is <SPAN 
+                        style="COLOR: #0000ff">true</SPAN>.</TD></TR>
+                    <TR>
+                      <TD>popBoxShowRevertImage</TD>
+                      <TD>boolean</TD>
+                      <TD>This represents the default value of whether the 
+                        image icon should be displayed at the top right of the 
+                        image after it has been popped. It can be overridden by 
+                        the pbShowRevertImage custom attribute (see below). The 
+                        default value is <SPAN 
+                        style="COLOR: #0000ff">true</SPAN>.</TD></TR>
+                    <TR>
+                      <TD>popBoxShowRevertText</TD>
+                      <TD>boolean</TD>
+                      <TD>This represents the default value of whether the 
+                        text message should be displayed across the top of the 
+                        image after it has been popped. It can be overridden by 
+                        the pbShowRevertText custom attribute (see below). The 
+                        default value is <SPAN 
+                        style="COLOR: #0000ff">true</SPAN>.</TD></TR>
+                    <TR>
+                      <TD>popBoxWaitImage.src</TD>
+                      <TD>string</TD>
+                      <TD>This represents the image displayed when the user 
+                        must wait for the expanded image to load prior to being 
+                        Popped. To set it's value in your code add a script line 
+                        that looks like this:<BR><BR><SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">script</SPAN> <SPAN 
+                        style="COLOR: #ff0000">type</SPAN>="text/javascript"&gt;<BR>popBoxWaitImage.src 
+                        = <SPAN 
+                        style="COLOR: #0000ff">"yoursite/images/image.jpg";</SPAN><BR>&lt;/<SPAN 
+                        style="COLOR: #660000">script</SPAN>&gt; 
+                    </SPAN></TD></TR></TBODY></TABLE>
+                  <P>You may edit the defaults in the PopBox.js file of course, 
+                  but to avoid overwriting your changes when PopBox is updated I 
+                  recommend that instead you set the values in your own script 
+                  after the PopBox script include. </P>
+                  <P class=TopicHeader3>Example:</P>
+                  <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                  style="COLOR: #0000ff">&lt;<SPAN 
+                  style="COLOR: #660000">script</SPAN> <SPAN 
+                  style="COLOR: #ff0000">src</SPAN>="/yoursite/scripts/PopBox.js" 
+                  <SPAN 
+                  style="COLOR: #ff0000">type</SPAN>="text/javascript"&gt;&lt;/<SPAN 
+                  style="COLOR: #660000">script</SPAN>&gt; </SPAN></P>
+                  <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                  style="COLOR: #0000ff">&lt;<SPAN 
+                  style="COLOR: #660000">script</SPAN> <SPAN 
+                  style="COLOR: #ff0000">type</SPAN>="text/javascript"&gt;<BR><SPAN 
+                  style="COLOR: #000000">popBoxRevertText = "Click image to 
+                  shrink it.";</SPAN><BR><SPAN style="COLOR: #0000ff">&lt;/<SPAN 
+                  style="COLOR: #660000">script</SPAN>&gt;</SPAN> </SPAN></P>
+                  <HR>
+
+                  <P class=TopicHeader1><A name=CustomAttributes></A>Custom 
+                  Attributes </P>
+                  <P>In addition to the global variables PopBox also uses a 
+                  number of custom attributes on <SPAN 
+                  style="COLOR: #0000ff">&lt;<SPAN 
+                  style="COLOR: #660000">img</SPAN>&gt;</SPAN> tags to allow for 
+                  modification of the defaults. </P>
+                  <P>I know that custom attributes are not "XHTML Strict" 
+                  compliant. I believe that the XHTML Strict specification has 
+                  some flaws and is largely irrelevant anyway. (See this article 
+                  on <A 
+                  href="http://codinginparadise.org/weblog/2005/08/xhtml-considered-harmful.html">codinginparadise</A> 
+                  and this one on <A 
+                  href="http://www.quirksmode.org/about/quirksmode.html">quirksmode</A>.) 
+                  If you really want strict compliance then you are free to 
+                  create your own DTD with the PopBox attributes, or just use 
+                  the globals and tough it out. </P>
+                  <P>If you have no idea what XHTML Strict is then count 
+                  yourself lucky because it probably doesn't affect you. 99.999% 
+                  of you should be able to use these attributes just fine. </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>&lt;img&gt; Attribute</TH>
+                      <TH>Data Type</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>pbCaption</TD>
+                      <TD>string</TD>
+                      <TD>This is the text message that should be displayed 
+                        across the bottom of the image after it has been popped. 
+                        If this value is not set and the image contains a <SPAN 
+                        style="COLOR: #ff0000">title</SPAN> attribute then the 
+                        value of the <SPAN style="COLOR: #ff0000">title</SPAN> 
+                        attribute will be used for the caption, assuming that 
+                        you have defined pbShowCaption or popBoxShowCaption 
+                        appropriately.<BR><BR>Unlike the RevertBar and PopBar, 
+                        the caption for the image can be any length you wish. If 
+                        the length of the caption cannot fit on one line it will 
+                        be automatically truncated and a link to dynamically 
+                        view the full caption will be generated for 
+                        you.<BR><BR>At this time the caption can contain 
+                        apostrophes (') but cannot contain double quotes. 
+                        Hyperlinks in the caption are supported, but the 
+                        attributes of the &lt;a&gt; tag need to be surrounded 
+                        with single quotes instead of double quotes.</TD></TR>
+                    <TR>
+                      <TD>pbPopImage</TD>
+                      <TD>string</TD>
+                      <TD>This is the url to the image that should be 
+                        displayed at the top right of the image at page load. It 
+                        overrides the page default as set by popBoxPopImage. 
+                        <BR><BR>This image should be 20 x 20 pixels in width and 
+                        height.</TD></TR>
+                    <TR>
+                      <TD>pbPopText</TD>
+                      <TD>string</TD>
+                      <TD>This is the text message that should be displayed 
+                        across the top of the image at page load. It overrides 
+                        the page default as set by popBoxPopText.</TD></TR>
+                    <TR>
+                      <TD>pbRevertImage</TD>
+                      <TD>string</TD>
+                      <TD>This is the url to the image that should be 
+                        displayed at the top right of the image after it has 
+                        been popped. It overrides the page default as set by 
+                        popBoxRevertImage. <BR><BR>This image should be 20 x 20 
+                        pixels in width and height.</TD></TR>
+                    <TR>
+                      <TD>pbRevertText</TD>
+                      <TD>string</TD>
+                      <TD>This is the text message that should be displayed 
+                        across the top of the image after it has been popped. It 
+                        overrides the page default as set by 
+                    popBoxRevertText.</TD></TR>
+                    <TR>
+                      <TD>pbShowCaption</TD>
+                      <TD>string</TD>
+                      <TD>This represents the value of whether the caption 
+                        should be displayed across the bottom of the image after 
+                        it has been popped. It overrides the page default as set 
+                        by popBoxShowCaption. Valid values are "true" and 
+                        "false".</TD></TR>
+                    <TR>
+                      <TD>pbShowPopBar</TD>
+                      <TD>string</TD>
+                      <TD>This represents the value of whether the transparent 
+                        PopBar should be displayed across the top of the image 
+                        at page load. This attribute MUST be included on any 
+                        <SPAN style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN>&gt;</SPAN> element 
+                        where you want the PopBar transparency, text and/or 
+                        image to display (this attribute is the trigger for the 
+                        PopBar).<BR><BR>If set to "true" then the transparency 
+                        will display. If set to "false" then the transparency 
+                        will not display, but you can still set the text and 
+                        image to display if you wish.</TD></TR>
+                    <TR>
+                      <TD>pbShowPopImage</TD>
+                      <TD>string</TD>
+                      <TD>This represents the value of whether the image icon 
+                        should be displayed at the top right of the image at 
+                        page load. It overrides the page default as set by 
+                        popBoxShowPopImage. Valid values are "true" and 
+                      "false".</TD></TR>
+                    <TR>
+                      <TD>pbShowPopText</TD>
+                      <TD>string</TD>
+                      <TD>This represents the value of whether the text 
+                        message should be displayed across the top of the image 
+                        at page load. It overrides the page default as set by 
+                        popBoxShowPopText. Valid values are "true" and 
+                      "false".</TD></TR>
+                    <TR>
+                      <TD>pbShowRevertBar</TD>
+                      <TD>string</TD>
+                      <TD>This represents the value of whether the transparent 
+                        RevertBar should be displayed across the top of the 
+                        image after it has been popped. It overrides the page 
+                        default as set by popBoxShowRevertBar. Valid values are 
+                        "true" and "false".</TD></TR>
+                    <TR>
+                      <TD>pbShowRevertImage</TD>
+                      <TD>string</TD>
+                      <TD>This represents the value of whether the image icon 
+                        should be displayed at the top right of the image after 
+                        it has been popped. It overrides the page default as set 
+                        by popBoxShowRevertImage. Valid values are "true" and 
+                        "false".</TD></TR>
+                    <TR>
+                      <TD>pbShowRevertText</TD>
+                      <TD>string</TD>
+                      <TD>This represents the value of whether the text 
+                        message should be displayed across the top of the image 
+                        after it has been popped. It overrides the page default 
+                        as set by popBoxShowRevertText. Valid values are "true" 
+                        and "false".</TD></TR>
+                    <TR>
+                      <TD>pbSrc</TD>
+                      <TD>string</TD>
+                      <TD>This represents the url of the image to use when 
+                        popping the image. A <SPAN 
+                        style="COLOR: #ff0000">src</SPAN> attribute must still 
+                        be defined for the thumbnail. This image will be 
+                        preloaded in the page onload event. See the <A 
+                        href="#pbSrc">pbSrc 
+                        Notes</A> section above for more details.</TD></TR>
+                    <TR>
+                      <TD>pbSrcNL</TD>
+                      <TD>string</TD>
+                      <TD>This represents the url of the image to use when 
+                        popping the image. A <SPAN 
+                        style="COLOR: #ff0000">src</SPAN> attribute must still 
+                        be defined for the thumbnail. This image will be NOT be 
+                        preloaded in the page onload event. The <SPAN 
+                        style="COLOR: #ff0000">pbSrcNL</SPAN> attribute value 
+                        will override any other value, but will not stop the 
+                        preloading of the <SPAN 
+                        style="COLOR: #ff0000">pbSrc</SPAN> value if one is 
+                        defined. It is therefore recommended to use one or the 
+                        other. See the <A 
+                        href="#pbSrc">pbSrc 
+                        Notes</A> section above for more 
+                  details.</TD></TR></TBODY></TABLE>
+                  <P class=TopicHeader3>Example </P>
+                  <P style="PADDING-LEFT: 20px" class=CodeSample><SPAN 
+                  style="COLOR: #0000ff">&lt;<SPAN 
+                  style="COLOR: #660000">img</SPAN> <SPAN 
+                  style="COLOR: #ff0000">id</SPAN>="imgBlueScoop" <SPAN 
+                  style="COLOR: #ff0000">alt</SPAN>=""<BR><SPAN 
+                  style="COLOR: #ff0000">src</SPAN>="images/BlueScoop.JPG"<BR><SPAN 
+                  style="COLOR: #ff0000">style</SPAN>="width: 150px; height: 
+                  100px;"<BR><SPAN 
+                  style="COLOR: #ff0000">class</SPAN>="PopBoxImageSmall" <SPAN 
+                  style="COLOR: #ff0000">title</SPAN>="Click to 
+                  magnify/shrink"<BR><SPAN 
+                  style="COLOR: #ff0000">onclick</SPAN>="Pop(this,50,'PopBoxImageLarge');"<BR><SPAN 
+                  style="COLOR: #ff0000">ondblclick</SPAN>="Revert(this,50,'PopBoxImageSmall');"<BR><SPAN 
+                  style="COLOR: #ff0000">pbShowRevertBar</SPAN>="true"<BR><SPAN 
+                  style="COLOR: #ff0000">pbShowRevertText</SPAN>="true"<BR><SPAN 
+                  style="COLOR: #ff0000">pbShowRevertImage</SPAN>="true"<BR><SPAN 
+                  style="COLOR: #ff0000">pbRevertText</SPAN>="Click to 
+                  Shrink"<BR><SPAN 
+                  style="COLOR: #ff0000">pbRevertImage</SPAN>="http://yoursite/images/magminus.gif" 
+                  /&gt;</SPAN> </P>
+                  <HR>
+
+                  <P class=TopicHeader1><A name=CSSClasses></A>CSS Classes </P>
+                  <P>PopBox does not define any specific CSS classes, though the 
+                  source code does come with a sample stylesheet. You are free 
+                  to use it or define your own. </P>
+                  <P>PopBox does however support CSS classes as a function 
+                  parameter. Most of the images on this page use a CSS class to 
+                  add a border around the image when Popped. </P>
+                  <HR>
+
+                  <P class=TopicHeader1><A name=ReservedWords></A>Reserved Words 
+                  </P>
+                  <P>In addition to the function names and the global variables 
+                  there are a few reserved words since they are the names of 
+                  supporting functions and variables included in the PopBox 
+                  source. If these names are redefined after the PopBox script 
+                  include then PopBox may not function as designed. </P>
+                  <TABLE class=APIParams border=1 cellSpacing=0 cellPadding=5>
+                    <TBODY>
+                    <TR>
+                      <TH>Reserved Word</TH>
+                      <TH>Description</TH></TR>
+                    <TR>
+                      <TD>Pop</TD>
+                      <TD>Main function. User callable.</TD></TR>
+                    <TR>
+                      <TD>PopBox</TD>
+                      <TD>Main function. User callable.</TD></TR>
+                    <TR>
+                      <TD>PopEx</TD>
+                      <TD>Main function. User callable.</TD></TR>
+                    <TR>
+                      <TD>Revert</TD>
+                      <TD>Main function. User callable.</TD></TR>
+                    <TR>
+                      <TD>PostPopProcessing</TD>
+                      <TD>Main event function. User definable.</TD></TR>
+                    <TR>
+                      <TD>PrePopProcessing</TD>
+                      <TD>Main event function. User definable.</TD></TR>
+                    <TR>
+                      <TD>PostRevertProcessing</TD>
+                      <TD>Main event function. User definable.</TD></TR>
+                    <TR>
+                      <TD>PreRevertProcessing</TD>
+                      <TD>Main event function. User definable.</TD></TR>
+                    <TR>
+                      <TD>AddCaptionText</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>CalculateImageDimensions</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>CreatePbBar</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>CreatePopBar</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>CreateRandomId</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>CreateRevertBar</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>CreateWaitImage</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>DoPopBox</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>GetElementPosition</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>GetInsideWindowSize</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>GetObjectPadding</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>GetObjectSize</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>GetRawObject</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>GetScrollOffset</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>HasCaption</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>HasRevertBar</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>InitPbPopBar</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>InitPbSrc</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>InitPopBox</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>MouseMoveRevert</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>ResizeCaption</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>SeekLayer</TD>
+                      <TD>Supporting function.</TD></TR>
+                    <TR>
+                      <TD>popBoxAutoClose</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxCaptionBelow</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxCaptionLessText</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxCaptionMoreText</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxMouseMoveRevert</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxPopBarAbove</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxPopImage</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxPopText</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxRevertBarAbove</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxRevertImage</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxRevertText</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxShowCaption</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxShowPopImage</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxShowPopText</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxShowRevertBar</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxShowRevertImage</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxShowRevertText</TD>
+                      <TD>Global Variable. User modifiable.</TD></TR>
+                    <TR>
+                      <TD>popBoxWaitImage</TD>
+                      <TD>Global Variable. src property is user 
+                    modifiable.</TD></TR>
+                    <TR>
+                      <TD>pbMouseMoveRevert</TD>
+                      <TD>Global Variable. Do Not Modify.</TD></TR>
+                    <TR>
+                      <TD>pbPopBarFunc</TD>
+                      <TD>Global Variable. Do Not Modify.</TD></TR>
+                    <TR>
+                      <TD>pbSrc</TD>
+                      <TD>Global Variable. Do Not Modify In Script (but you 
+                        can still use it as an attribute of an <SPAN 
+                        style="COLOR: #0000ff">&lt;<SPAN 
+                        style="COLOR: #660000">img</SPAN>&gt;</SPAN> tag).</TD></TR>
+                    <TR>
+                      <TD>popBox</TD>
+                      <TD>Global Variable. Do Not Modify.</TD></TR>
+                    <TR>
+                      <TD>popBoxZ</TD>
+                      <TD>Global Variable. Do Not Modify.</TD></TR></TBODY></TABLE>
+                  <HR>
+
+                  <P class=TopicHeader1><A name=Support></A>Support </P>
+                  <P>Support is limited to email and since this is free I won't 
+                  promise more than I can deliver while still working a day job, 
+                  but I'll do my best. I am working on a few enhancements, so be 
+                  sure to sign up for my <A 
+                  href="">mailing 
+                  list</A> or subscribe to my <A 
+                  href="">RSS feed</A> to be 
+                  informed of the latest progress. </P>
+                  
+                  <P><IMG style="FLOAT: right" alt="Powered by PopBox!" 
+                  src="PopBoxDocumentation_files/PoweredByPopBox2.gif"> 
+                  </P></DIV>
+                  <DIV id=divContentFooter class=ContentFooter>
+                  <HR>
+
+                  <DIV>
+                  <TABLE class=Subscriptions border=0 cellSpacing=5>
+                    <TBODY>
+                    <TR>
+                      <TD style="VERTICAL-ALIGN: top">About the Author: </TD>
+                      <TD style="COLOR: #000000; FONT-WEIGHT: normal">I'm the 
+                        author, John S. Reid, a software developer and 
+                        consultant in Northern California. I've been managing 
+                        and coding on development projects of all kinds for many 
+                        of the top companies in America since 1996 and have only 
+                        recently begun to produce my own software in the hopes 
+                        that I can build a great software company where top 
+                        notch people want to work. </TD></TR>
+							</TBODY></TABLE></DIV></DIV></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <DIV class=Footer>
+      <DIV style="TEXT-ALIGN: center; MARGIN-TOP: 20px; FONT-SIZE: 7pt"><A 
+      id=_ctl0__ctl0_PlaceHolderFooter_lnkHome 
+      href="">home</A> | <A 
+      id=_ctl0__ctl0_PlaceHolderFooter_lnkContact 
+      href="">contact</A> | <A 
+      id=_ctl0__ctl0_PlaceHolderFooter_lnkMailingList 
+      href="">mailing list</A> | <A 
+      id=_ctl0__ctl0_PlaceHolderFooter_lnkRSSFeedBottom 
+      href=""><SPAN 
+      style="POSITION: relative; TOP: 0px"><SPAN 
+      style="POSITION: absolute; TOP: 0px" class=RSSBottom>RSS</SPAN></SPAN></A> 
+      <BR>All content Copyright © 2001-2010, C6 Software, Inc. 
+  </DIV></DIV></TD></TR></TBODY></TABLE></CENTER>
+</BODY></HTML>
