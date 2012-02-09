@@ -56,7 +56,8 @@ $autoload['libraries'] = array( 'database',
 								'session',
 								'cart', 
 								'pagination',
-								'form_validation');
+								'form_validation',
+								'Img_magnifier');
 
 /*
 | -------------------------------------------------------------------
