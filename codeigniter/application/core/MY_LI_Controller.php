@@ -1,15 +1,13 @@
 <?php
 
-class MY_Controller extends CI_Controller
+class MY_LI_Controller extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
-		/*
         if (!$this->session->userdata('loggedin')){
 			redirect('/sessions/log_in/','refresh');
         } 
-		*/
     }
 	
 	public function paginated_data($offset,$count,$base_url,$per_page,$uri_segment,$queryResult,$queriedItems){
