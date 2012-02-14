@@ -1,0 +1,1 @@
+<?phpclass Account_type_model extends MY_Model {		public function __construct()	{		$this->_table = 'account_type';		$this->primary_key = 'aid';		$this->load->database();	}}
