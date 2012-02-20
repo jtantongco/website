@@ -19,8 +19,7 @@ class Welcome extends MY_Controller {
 	 */
 	public function index(){
 		//$this->load->view('welcome_message');
-		$this->load->view('welcome/test');
-		//$this->renderTemp_noData('welcome/welcome', 'Welcome to our site!');
+		$this->renderTemp_noData('welcome/welcome', 'Welcome to our site!');
 	}
 	
 	public function under_construction(){
