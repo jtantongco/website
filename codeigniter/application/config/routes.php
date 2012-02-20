@@ -38,6 +38,19 @@
 |
 */
 
+$route['session/not_allowed'] = 	'session/not_allowed';
+$route['session/verify/(:any)'] = 	'session/verify/$1';
+$route['session/sign_up'] = 		'session/sign_up';
+$route['session/log_out'] =			'session/log_out';
+$route['session/log_in'] =			'session/log_in';
+$route['session/(:any)'] =			'session/log_in';
+$route['session'] = 				'session/log_in';
+
+$route['welcome/under_construction'] = 'welcome/under_construction';
+$route['welcome/help'] = 'welcome/help';
+$route['welcome/(:any)'] = 'welcome';
+$route['welcome'] = 'welcome';
+
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
