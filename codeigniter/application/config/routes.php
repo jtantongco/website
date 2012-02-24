@@ -38,13 +38,13 @@
 |
 */
 
-$route['session/not_allowed'] = 	'session/not_allowed';
-$route['session/verify/(:any)'] = 	'session/verify/$1';
-$route['session/sign_up'] = 		'session/sign_up';
-$route['session/log_out'] =			'session/log_out';
-$route['session/log_in'] =			'session/log_in';
-$route['session/(:any)'] =			'session/log_in';
-$route['session'] = 				'session/log_in';
+$route['sessions/not_allowed'] = 	'sessions/not_allowed';
+$route['sessions/verify/(:any)'] = 	'sessions/verify/$1';
+$route['sessions/sign_up'] = 		'sessions/sign_up';
+$route['sessions/log_out'] =		'sessions/log_out';
+$route['sessions/log_in'] =			'sessions/log_in';
+$route['sessions/(:any)'] =			'sessions/log_in';
+$route['sessions'] = 				'sessions/log_in';
 
 $route['welcome/under_construction'] = 'welcome/under_construction';
 $route['welcome/help'] = 'welcome/help';

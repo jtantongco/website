@@ -1,6 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Sessions extends CI_Controller {
+	/*
+	public function __construct(){
+		//controller wide specific loads are to be put here
+	} */
+	
 	public function log_in(){
 		$this->form_validation->set_rules('user_name'	,'user_name',	'required');
 		$this->form_validation->set_rules('password'	,'password',	'required');
@@ -78,15 +83,6 @@ class Sessions extends CI_Controller {
 			}
 		}
 	}
-	
-	public function __construct(){
-		//controller wide specific loads are to be put here
-	}
-	
-	public function log_in(){
-		$this->load->view('welcome_message');
-	}
-	
 	
 	public function log_out(){
 		$this->session->unset_userdata('loggedin');
@@ -202,6 +198,7 @@ class Sessions extends CI_Controller {
 		} else {
 			$this->renderTemp_noData('sessions/verify_fail', 'Failed to verify the account');
 		}
+	}
 	
 	public function not_allowed(){
 		$this->renderTemp_noData('sessions/not_allowed', 'Your privileges are Insufficient');
@@ -242,5 +239,4 @@ class Sessions extends CI_Controller {
 		$this->load->view($page, $data);
 		$this->load->view('templates/footer');
 	}
-	
 }

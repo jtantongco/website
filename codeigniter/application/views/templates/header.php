@@ -4,11 +4,10 @@
 </head>
 <body>
 
-<!--
 	<table>
 		<tr>
 			<td>
-				<img src='<?php echo datapi_logo ?>'>
+				<img src='<?php // echo datapi_logo ?>'>
 			</td>
 			<td>
 				<table>
@@ -30,4 +29,3 @@
 	</table>
 </br>
 </br>
--->
