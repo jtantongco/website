@@ -38,24 +38,11 @@ class Sessions extends CI_Controller {
 						$data['name'] = $user_data->user_name;
 						switch ($user_data->aid) {
 							case 0: //General user
+								$data['check'] = 'Successfully Logged In!';
 								$this->load->view('templates/LI_header', $data);
+								$this->load->view('templates/LI_notice', $data);
 								$this->load->view('templates/LI_starter', $data);
 								$this->load->view('templates/LI_footer');
-								break;
-							case 1: //Teacher
-								$this->load->view('templates/LI_header_teacher',$data);
-								$this->load->view('templates/LI_starter_teacher', $data);
-								$this->load->view('templates/LI_footer_teacher');
-								break;			
-							case 2: //School
-								$this->load->view('templates/LI_header_school',$data);
-								$this->load->view('templates/LI_starter_school', $data);
-								$this->load->view('templates/LI_footer_school');
-								break;
-							case 3: //Admin
-								$this->load->view('templates/LI_header_admin',$data);
-								$this->load->view('templates/LI_starter_admin', $data);
-								$this->load->view('templates/LI_footer_admin');
 								break;
 							default:
 								redirect('/sessions/log_in/','refresh');

@@ -27,12 +27,12 @@
 	//Must be called at least once
 	function render_popScript(){
 		//SRC for js must be outside the codeigniter since you get 403 forbidden error if not outside (need public permission)
-		echo '	<script src="http://datapi.com/jtantongco/scripts/popUpMagnifier/PopBoxDocumentation_files/PopBox.js" type="text/javascript">
+		echo '	<script src="'.magnifyjs.'" type="text/javascript">
 				</script>
 				<script type="text/javascript">
-				popBoxWaitImage.src = "http://datapi.com/jtantongco/scripts/popUpMagnifier/spinner40.gif";
-				popBoxRevertImage = "http://datapi.com/jtantongco/scripts/popUpMagnifier/magminus.gif";
-				popBoxPopImage = "http://datapi.com/jtantongco/scripts/popUpMagnifier/magplus.gif";
+				popBoxWaitImage.src = "'. magspinner .'";
+				popBoxRevertImage = "'. magminus .'";
+				popBoxPopImage = "'. magminus .'";
 				</script> '; 
 	}
 	

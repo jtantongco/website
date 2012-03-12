@@ -1,0 +1,20 @@
+#check{
+	width: 400 px;
+	border-color: #9FCF9F;
+	border-style: solid;
+	background-color: #DFFFDF;
+}
+
+#cross{
+	width: 400 px;
+	border-color: #C80100;
+	border-style: double;
+	background-color: #FE0000;
+}
+
+#notice{
+	width: 400 px;
+	border-color: black;
+	border-style: double;
+	background-color: #FFCA26;
+}
