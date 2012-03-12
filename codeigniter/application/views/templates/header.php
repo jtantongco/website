@@ -7,7 +7,7 @@
 	<table>
 		<tr>
 			<td>
-				<img src='<?php // echo datapi_logo ?>'>
+				<img src='<?php echo logo ?>'>
 			</td>
 			<td>
 				<table>
@@ -17,10 +17,6 @@
 					</tr>
 					<tr>
 						<td><?php echo anchor('welcome'					,'Home'		); ?></td>
-						<td><?php echo anchor('welcome/splash_parents'	,'Parents'	); ?></td>
-						<td><?php echo anchor('welcome/splash_students'	,'Students'	); ?></td>
-						<td><?php echo anchor('welcome/splash_teachers'	,'Teachers'	); ?></td>
-						<td><?php echo anchor('welcome/splash_partners'	,'Partners'	); ?></td>
 						<td><?php echo anchor('welcome/help'			,'FAQs' 	); ?></td>
 					</tr>
 				</table>
