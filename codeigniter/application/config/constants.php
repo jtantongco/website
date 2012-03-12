@@ -37,16 +37,20 @@ define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 /* Website Images and Icons */
-define('logo', 									'http://zigu.freeiz.com/images/logo.png');
+define('logo', 									'http://zigu.freeiz.com/images/logo.gif');
 define('magspinner',							'http://zigu.freeiz.com/scripts/popUpMagnifier/spinner40.gif');
 define('magplus',								'http://zigu.freeiz.com/scripts/popUpMagnifier/magplus.gif');
 define('magminus',								'http://zigu.freeiz.com/scripts/popUpMagnifier/magminus.gif');
 /* End of Images and Icons */
 
-/* Javascript and CSS */
+/* Javascript */
 define('magnifyjs',								'http://zigu.freeiz.com/scripts/popUpMagnifier/PopBoxDocumentation_files/PopBox.js');
-define('display_elements',						'http://zigu.freeiz.com/scripts/display_elements.css');
-/* End of Javascript and CSS */
+/* End of Javascript */
+
+/* CSS */
+define('display_elements',						'http://zigu.freeiz.com/css/display_elements.css');
+define('template',								'http://zigu.freeiz.com/css/style.css');
+/* End of CSS */
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

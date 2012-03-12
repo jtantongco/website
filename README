@@ -2,12 +2,17 @@ This is the code repository for Jeremiah's site.
 
 It serves as a platform for me to experiment, put up fun web projects, employers to view the quality of my code and any other such use I can find for it.
 
-This sight has the following credits for technologies used:
+This site has the following credits for technologies used:
 
-
-This is a list of all the libraries I've found and appropriated for my site:
+This is a list of all the libraries and designs I've found and appropriated for my site:
 Popbox: Javascript image magnification
 http://popbox.sourceforge.net/
+
+Website Template from freewebsitetemplates.com
+http://www.freewebsitetemplates.com/forums/threads/generic-website-template.19025/
+
+CI MY_Model class for easier DB interactions
+http://github.com/jamierumbelow/codeigniter-base-model
 
 Have a great day!
 
