@@ -1,12 +1,14 @@
 			</div>
 			<div class="footer">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="services.html">Gallery</a></li>
+					<li><?php echo anchor('welcome',				'Home'		); ?></li>
+					<li><?php echo anchor('welcome/about',			'About'		); ?></li>
+					<li><?php echo anchor('welcome/blog',			'Blog'		); ?></li>
+					<li><?php echo anchor('welcome/services',		'Services'	); ?></li>
+					<li><?php echo anchor('welcome',				'Members'	); ?></li>
+					<li><?php echo anchor('welcome/help',			'FAQs' 	); ?></li>
 				</ul>
-				<p>&#169; Copyright &#169; 2011. Company name all rights reserved</p>
+				<p>&#169; Copyright &#169; 2012. Zigu </p>
 				<div class="connect">
 					<a href="http://facebook.com/freewebsitetemplates" id="facebook">facebook</a>
 					<a href="http://twitter.com/fwtemplates" id="twitter">twitter</a>

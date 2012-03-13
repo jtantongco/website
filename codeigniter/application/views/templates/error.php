@@ -5,5 +5,5 @@ Here is what our Tech monkeys think can be done about it:</br>
 
 </br>
 
-Datapi Tech support will be happy to help you if the Error message was not specific enough. </br>
-Datapi Tech support can be reaced at: emailaddr@datapi.com
+Tantongco Tech support will be happy to help you if the Error message was not specific enough. </br>
+Tantongco Tech support can be reaced at: jtantongco@gmail.com

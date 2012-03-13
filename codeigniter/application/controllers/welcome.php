@@ -22,14 +22,30 @@ class Welcome extends CI_Controller {
 		$this->renderTemp_noData('welcome/welcome', 'Welcome to our site!');
 	}
 	
-	public function under_construction(){
-		$this->renderTemp_noData('welcome/under_construction','Website being built: Come back soon!');
+	public function about(){
+		$this->renderTemp_noData('welcome/about', 'About me!');
+	}
+	
+	public function blog(){
+		$this->renderTemp_noData('welcome/blog', 'Where Jeremiah\'s word seems legit');
+	}
+	
+	public function services(){
+		$this->renderTemp_noData('welcome/services', 'What Jeremiah can do (Kinda...) ');
+	}
+	
+	public function members(){
+		$this->renderTemp_noData('welcome/members', 'Come on in!');
 	}
 	
 	public function help(){
 		$this->renderTemp_noData('welcome/help', 'Help/FAQ - Your questions answered!');
 	}
-
+	
+	public function under_construction(){
+		$this->renderTemp_noData('welcome/under_construction','Website being built: Come back soon!');
+	}
+		
 	//Helper methods
 	public function paginated_data($offset,$count,$base_url,$per_page,$uri_segment,$queryResult,$queriedItems){
 		$config['base_url'] 	= $base_url;

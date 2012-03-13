@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<title>Xayona Website Template</title>
+		<title><?php echo $title ?></title>
 		<link rel="stylesheet" href="<?php echo template ?>" type="text/css" />
 		<!--[if IE 7]>
 			<link rel="stylesheet" href="css/ie7.css" type="text/css" />
@@ -14,15 +14,12 @@
 			<div class="header">
 				<a href="index.html" id="logo"><img src="<?php echo logo ?>" alt=""/></a>
 				<ul>
-					<li class="selected"><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><?php echo anchor('sessions/sign_up'		,'Sign up'	); ?></li>
-					<li><?php echo anchor('sessions/log_in'			,'Log In'	); ?></li>
-					<li><?php echo anchor('welcome'					,'Home'		); ?></li>
-					<li><?php echo anchor('welcome/help'			,'FAQs' 	); ?></li>
-				
+					<li class="selected">	<?php echo anchor('welcome',				'Home'		); ?></li>
+					<li>					<?php echo anchor('welcome/about',			'About'		); ?></li>
+					<li>					<?php echo anchor('welcome/blog',			'Blog'		); ?></li>
+					<li>					<?php echo anchor('welcome/services',		'Services'	); ?></li>
+					<li>					<?php echo anchor('welcome/members'	,		'Members'	); ?></li>
+					<li>					<?php echo anchor('welcome/help',			'FAQs' 		); ?></li>
 				</ul>
 			</div>
 			<div class="body">

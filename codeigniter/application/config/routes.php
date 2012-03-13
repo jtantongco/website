@@ -46,10 +46,15 @@ $route['sessions/log_in'] =			'sessions/log_in';
 $route['sessions/(:any)'] =			'sessions/log_in';
 $route['sessions'] = 				'sessions/log_in';
 
-$route['welcome/under_construction'] = 'welcome/under_construction';
-$route['welcome/help'] = 'welcome/help';
-$route['welcome/(:any)'] = 'welcome';
-$route['welcome'] = 'welcome';
+$route['welcome/members']				= 'welcome/members';
+$route['welcome/services']				= 'welcome/services';
+$route['welcome/blog/(:any)']			= 'welcome/blog/$1';
+$route['welcome/blog']					= 'welcome/blog/0';
+$route['welcome/about']					= 'welcome/about';
+$route['welcome/under_construction'] 	= 'welcome/under_construction';
+$route['welcome/help'] 					= 'welcome/help';
+$route['welcome/(:any)'] 				= 'welcome';
+$route['welcome'] 						= 'welcome';
 
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
