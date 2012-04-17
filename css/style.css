@@ -177,6 +177,14 @@ body{
 	margin:15px 0 0;
 	line-height:21px;
 }
+.body h4{
+	font-family: 'RokkittRegular';
+	font-size:14px;
+	font-weight:bold;
+	color:#f28220;
+	margin:14px 0 0;
+	line-height:20px;
+}
 .body p{
 	font-family: 'RokkittRegular';
 	font-size:16px;
@@ -275,20 +283,24 @@ body{
 }
 .body ul.paging{
 	margin:15px 0 10px 210px;
+	text-align: center;
 }
 .body ul.paging li{
 	float:left;
 	padding:0 5px;
 	background:none;
 }
-.body ul.paging li a{
+.body ul.paging a{
 	text-decoration:none;
 	color:#ff7e0d;
 	font-family: arial;
 	font-size:12px;
 }
-.body ul.paging li a:hover{
+.body ul.paging a:hover{
 	color:#5D5D5D;
+}
+.body ul.paging strong{
+	color:#6d6e72;
 }
 
 /*------------------------- Footer ------------------------*/ 

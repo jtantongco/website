@@ -32,7 +32,7 @@
 				<script type="text/javascript">
 				popBoxWaitImage.src = "'. magspinner .'";
 				popBoxRevertImage = "'. magminus .'";
-				popBoxPopImage = "'. magminus .'";
+				popBoxPopImage = "'. magplus .'";
 				</script> '; 
 	}
 	

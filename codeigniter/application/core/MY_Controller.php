@@ -27,9 +27,10 @@ class MY_Controller extends CI_Controller
 		$this->pagination->initialize($config);
 		
 		$data['pagelinks'] 		= $this->pagination->create_links();
+		print_r($data);
 		$data['offset'] 		= $offset;
 		//or statically set to a field in data like paginated_results?
-		$data[$queriedItems]	= $output; 
+		$data[$queriedItems]	= $queryResult; 
 		
 		return $data;
 	}
